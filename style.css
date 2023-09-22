@@ -1,0 +1,840 @@
+body, * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: 'Moscow sans';
+  src: url(/fonts/moscowSans/moscowsansregular.ttf);
+}
+header {
+  padding: 11px 16px 11px 80px;
+  background-color: #5531AB;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+section, footer {
+  padding: 150px 70px 110px 70px;
+}
+.container {
+  max-width: 1632px;
+  margin: 0 auto;
+  padding: 0;
+}
+.logo {
+  margin-bottom: 7px;
+}
+.header__burger-btn {
+  color: #fff !important;
+}
+.header__menu {
+  list-style: none;
+  display: flex;
+  column-gap: 42px;
+}
+.header__menu li a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: Zona Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  transition: .15s;
+  border-bottom-width: 3px;
+  border-bottom-color: transparent;
+  border-bottom-style: solid;
+  padding: 3px 0;
+}
+.header__menu li a:hover {
+  border-bottom-color: #fff;
+}
+.header__btns-wrap {
+  column-gap: 35px;
+  margin-left: auto;
+}
+.header__btns-wrap .btns-wrap__btn {
+  border-radius: 11px;
+  color: #fff;
+  font-family: 'Moscow sans', arial;
+  font-size: 24px;
+  transition: .2s;
+  padding: 6px 16px 6px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+.btns-wrap__question-btn {
+  background-color: transparent;
+  border: 1px solid #FFF;
+  font-weight: 300;
+}
+.btns-wrap__question-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+.btns-wrap__regist-btn {
+  background-color: #DB00FF;
+  border: none;
+  border: 1px solid #DB00FF;
+  font-weight: 900;
+}
+.btns-wrap__regist-btn:hover {
+  background-color: transparent;
+}
+
+.promo {
+  padding-top: 140px;
+  padding-right: 36px;
+  padding-left: 80px;
+}
+.promo__col-wrap1, .promo__data-wrap {
+  row-gap: 130px;
+}
+.promo__titles .title1, .promo__titles .title2 {
+  font-family: Zona Pro;
+  font-size: 76px;
+  font-weight: 900;
+  line-height: normal;
+  font-style: normal;
+}
+.promo__titles .title1 {
+  margin-bottom: 36px;
+}
+.promo__titles .title2 span {
+  position: relative;
+}
+.promo__titles .title2 span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  height: 26px;
+  background-color: #5531AB;
+  width: 105%;
+}
+.promo__date h3 {
+  color: #221752;
+  font-family: Moscow Sans;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.promo__date p {
+  color: #000;
+  font-family: Moscow Sans;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 83px;
+  max-width: 350px;
+  row-gap: 23px;
+}
+.promo__date p span {
+  display: inline-block;
+  background-color: #000;
+  height: 7px;
+  width: 134px;
+}
+.promo__btn {
+  border-radius: 25px;
+  background-color: #5531AB;
+  padding: 38px 80px;
+  width: 90%;
+  transition: .2s;
+}
+.promo__btn label {
+  color: #fff;
+  font-weight: 900;
+  font-family: Zona Pro;
+  font-size: 48px;
+  font-style: normal;
+  line-height: normal;
+  transition: .2s;
+}
+.promo__btn:hover {
+  background-color: #fff;
+  border: 2px solid #000;
+}
+.promo__btn:hover > label {
+  color: #000;
+}
+.promo__img-wrap {
+  background: url(img/ellipse-img.png);
+  background-repeat: no-repeat;
+  height: 480px;
+  background-size: contain;
+}
+.promo__img-wrap:before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 480.498px;
+  flex-shrink: 0;
+  z-index: -2;
+  background-color: #5531AB;
+  filter: blur(148px);
+  border-radius: 50%;
+}
+.promo__img-wrap:after {
+  content: url(img/circle-text.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rotate 40s infinite linear;
+  z-index: -1;
+  transform-origin: center center;
+}
+.promo__pills {
+  gap: 18px;
+  margin-top: 260px;
+}
+.first-row-pills-wrap {
+  display: flex;
+  column-gap: 18px;
+  margin-left: auto;
+}
+.promo__pills .pill {
+  border-radius: 74px;
+  display: inline-block;
+  transition: .2s;
+}
+.promo__pills .pill:hover {
+  transform: scale(1.05);
+}
+.promo__pills .pill1, 
+.promo__pills .pill5 {
+  background-color: #5531AB;
+}
+.promo__pills .pill2, 
+.promo__pills .pill4 {
+  background-color: #fff;
+  border: 3px solid #000;
+}
+.promo__pills .pill3 {
+  background-color: #000;
+}
+.promo__pills .pill1 {
+  padding: 16px 63px 9px 63px;
+}
+.promo__pills .pill2  {
+  padding: 12px 63px 13px 63px;
+} 
+.promo__pills .pill3 {
+  padding: 16px 51px 13px 51px;
+}
+.promo__pills .pill4 {
+  padding: 15px 51px 11px 51px;
+}
+.promo__pills .pill5 {
+  padding: 18px 31px 15px 31px;
+}
+.promo__pills .pill span {
+  font-family: Moscow Sans;
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.promo__pills .pill1 span,
+.promo__pills .pill3 span,
+.promo__pills .pill5 span {
+  color: #fff;
+}
+
+.main-title {
+  font-size: 96px;
+}
+.invitation {
+  background-color: #EFF4F7;
+}
+.invitation__title {
+  margin-bottom: 130px;
+}
+.invitation__title h1 {
+  color: #000;
+  font-family: Zona Pro;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.invitation__cards-row {
+  column-gap: 20px;
+}
+.invitation__cards-subrow {
+  row-gap: 20px;
+}
+.invitation__card {
+  border-radius: 30px;
+  padding: 45px 50px;
+}
+.invitation__card1 {
+  background-color: #493990;
+}
+.invitation__card2 {
+  background-color: #FFF;
+}
+.invitation__card3 {
+  background-image: linear-gradient(180deg, #6F5EBB 0%, #A175B0 100%);
+}
+.invitation__card1 .card-content__svg,
+.invitation__card2 .card-content__svg {
+  margin-bottom: 25px;
+}
+.invitation__card3 .card-content__svg {
+  margin-bottom: 30px;
+  width: 89px;
+  height: 82px;
+}
+.card-content__paragraph {
+  font-family: Zona Pro;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.6;
+}
+.invitation__card1 .card-content__paragraph {
+  color: #FFF;
+  font-size: 40px;
+}
+.invitation__card2 .card-content__paragraph {
+  color: #493990;
+  font-size: 40px;
+}
+.invitation__card3 .card-content__paragraph {
+  color: #fff;
+  font-size: 48px;
+  line-height: 122.5%;
+  letter-spacing: 0.96px;
+}
+.invitation hr {
+  margin: 125px auto;
+  background-color: #000;
+  height: 3px;
+  opacity: 1;
+}
+.info-row__column1:before {
+  content: url(img/arrow.svg);
+  position: absolute;
+  bottom: -15%;
+  left: 47%;
+}
+.info-row__title h1 {
+  color: #000;
+  font-family: Zona Pro;
+  font-size: 69px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.info-row__title h1 span {
+  text-transform: uppercase;
+}
+.info-row__paragraph {
+  color: #000;
+  font-family: Zona Pro;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 121%;
+  letter-spacing: 1.4px;
+  margin-top: 17px;
+  max-width: 560px;
+}
+.promo__video-wrap video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@keyframes rotate {
+  0% {
+    transform: translate(-15%, 20%) rotate(-16.263deg);
+  }
+  100% {
+    transform: translate(-15%, 20%) rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1666px) {
+  .main-title {
+    font-size: 79px;
+  }
+  .promo__col-wrap1, .promo__data-wrap {
+    row-gap: 100px;
+  }
+}
+@media screen and (max-width: 1620px) {
+  .promo {
+    padding-top: 120px;
+  }
+  .promo__titles .title1, .promo__titles .title2 {
+    font-size: 55px;
+  }
+  .promo__date h3, .promo__date p {
+    font-size: 52px;
+  }
+  .promo__date h3 {
+    margin-bottom: 15px;
+  }
+  .promo__date p {
+    row-gap: 15px;
+  }
+  .promo__btn label {
+    font-size: 38px;
+  }
+  .promo__img-wrap {
+    width: 550px;
+  }
+  .promo__img-wrap:after {
+    transform: scale(.9);
+    top: -20%;
+    left: 0;
+  }
+  .promo__pills {
+    margin-top: 200px;
+  }
+  .promo__pills .pill span {
+    font-size: 35px;
+  }
+
+  .main-title {
+    font-size: 65px;
+  }
+  .invitation__title {
+    margin-bottom: 100px;
+  }
+  .invitation__card1 .card-content__paragraph,
+  .invitation__card2 .card-content__paragraph {
+    font-size: 30px;
+  }
+  .invitation__card3 .card-content__paragraph {
+    font-size: 38px;
+  }
+  .info-row__title h1 {
+    font-size: 55px;
+  }
+  .info-row__paragraph {
+    font-size: 27px;
+  }
+  .info-row__column1:before {
+    transform: scale(0.7);
+  }
+  .info-row__column1:before {
+    bottom: 3%;
+  }
+}
+@media screen and (max-width: 1510px) {
+  .first-row-pills-wrap {
+    margin-left: 0;
+  }
+  .info-row__column1:before {
+    bottom: -40%;
+    left: 55%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .header__menu {
+    padding-left: 12px;
+  }
+  .header__menu li a, .header__btns-wrap .btns-wrap__btn {
+    font-size: 20px;
+  }
+  .header__btns-wrap {
+    column-gap: 30px;
+  }
+  .promo {
+    padding-top: 100px;
+  }
+  .promo__col-wrap1, .promo__data-wrap {
+    row-gap: 80px;
+  }
+  .promo__titles .title1, .promo__titles .title2 {
+    font-size: 50px;
+  }
+  .promo__date h3, .promo__date p {
+    font-size: 47px;
+  }
+  .promo__date h3 {
+    margin-bottom: 10px;
+  }
+  .promo__date p {
+    row-gap: 10px;
+  }
+  .promo__btn label {
+    font-size: 30px;
+  }
+  .promo__img-wrap {
+    width: 500px;
+  }
+  .promo .promo__img-wrap:after {
+    /* transform: scale(.7); */
+    /* top: -20%;
+    left: 0; */
+  }
+  .promo__pills .pill span {
+    font-size: 30px;
+  }
+  .promo__pills .pill1 {
+    padding: 16px 53px 9px 53px;
+  }
+  .promo__pills .pill2  {
+    padding: 12px 53px 13px 53px;
+  } 
+  .promo__pills .pill3 {
+    padding: 16px 41px 13px 41px;
+  }
+  .promo__pills .pill4 {
+    padding: 15px 41px 11px 41px;
+  }
+  .main-title {
+    font-size: 58px;
+  }
+  .invitation__title {
+    margin-bottom: 80px;
+  }
+  .invitation__card1 .card-content__paragraph,
+  .invitation__card2 .card-content__paragraph {
+    font-size: 25px;
+  }
+  .invitation__card3 .card-content__paragraph {
+    font-size: 33px;
+  }
+  .info-row__title h1 {
+    font-size: 55px;
+  }
+  .card-content__svg svg {
+    transform: scale(.9);
+  }
+  .invitation hr {
+    margin: 80px auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section, footer {
+    padding: 110px 70px 110px 70px;
+  }
+  .header__menu {
+    column-gap: 32px;
+    padding-left: 0;
+  }
+  .header__menu li a, .header__btns-wrap .btns-wrap__btn {
+    font-size: 17px;
+  }
+  .header__btns-wrap {
+    column-gap: 20px;
+  }
+  .header__btns-wrap .btns-wrap__btn {
+    padding: 4px 12px 4px 12px;
+  }
+  .promo {
+    padding-top: 100px;
+  }
+  .promo__titles .title1, .promo__titles .title2 {
+    font-size: 45px;
+  }
+  .promo__col-wrap1, .promo__data-wrap {
+    row-gap: 65px;
+  }
+  .promo__date h3, .promo__date p {
+    font-size: 40px;
+  }
+  .promo__date h3 {
+    margin-bottom: 8px;
+  }
+  .promo__date p {
+    row-gap: 0px;
+  }
+  .promo__btn {
+    padding: 35px 0px;
+    width: 80%;
+  }
+  .promo__btn label {
+    font-size: 25px;
+  }
+  .promo__pills .pill span {
+    font-size: 22px;
+  }
+  .promo__pills .pill1 {
+    padding: 16px 43px 9px 43px;
+  }
+  .promo__pills .pill2  {
+    padding: 12px 43px 13px 43px;
+  } 
+  .main-title {
+    font-size: 50px;
+  }
+  .invitation__title {
+    margin-bottom: 80px;
+  }
+  .invitation__card3 {
+    padding: 40px 50px;
+  }
+  .invitation__cards-subrow {
+    row-gap: 30px;
+  }
+  .invitation__card1 .card-content__svg,
+  .invitation__card2 .card-content__svg {
+    margin-bottom: 20px;
+  }
+  .invitation__card3 .card-content__svg {
+    margin-bottom: 25px;
+  }
+  .card-content__svg svg {
+    transform: scale(.8);
+  }
+  .invitation__card1 .card-content__paragraph,
+  .invitation__card2 .card-content__paragraph {
+    font-size: 24px;
+  }
+  .invitation__card3 .card-content__paragraph {
+    font-size: 32px;
+  }
+  .invitation hr {
+    margin: 100px auto;
+  }
+  .info-row__title h1 {
+    font-size: 43px;
+  }
+  .info-row__column1:before {
+    transform: scale(0.6);
+    bottom: -55%;
+    left: 47%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .promo {
+    padding-right: 80px;
+  }
+  .promo__titles .title1 {
+    margin-bottom: 24px;
+  }
+  .promo__titles .title1, .promo__titles .title2 {
+    font-size: 40px;
+  }
+  .promo__titles .title2 span::after {
+    bottom: -20px;
+    height: 20px;
+  }
+  .promo__date h3, .promo__date p {
+    font-size: 32px;
+  }
+  .promo__date h3 {
+    margin-bottom: 8px;
+  }
+  .promo__btn {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 50%;
+  }
+  .promo__btn label {
+    font-size: 22px;
+  }
+  .main-title { 
+    font-size: 40px;
+  }
+  .invitation__title {
+    margin-bottom: 60px;
+  }
+  .invitation__cards-row {
+    row-gap: 40px;
+  }
+  .invitation .invitation__card1, .invitation .invitation__card2 {
+    padding: 35px 30px;
+  }
+  .invitation__cards-subrow {
+    row-gap: 0px;
+  }
+  .invitation__card1 .card-content__paragraph,
+  .invitation__card2 .card-content__paragraph {
+    font-size: 20px;
+  }
+  .invitation__card3 .card-content__paragraph {
+    font-size: 28px;
+  }
+  .invitation hr {
+    margin: 80px auto;
+  }
+  .info-row__title h1 {
+    font-size: 32px;
+  }
+  .info-row__paragraph {
+    font-size: 20px;
+  }
+  .info-row__column1:before {
+    transform: rotate(-10deg) scale(0.4);
+    bottom: -65%;
+    left: 40%;
+  } 
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 5px 16px 5px 80px;
+  }
+  .promo, .invitation {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .promo__titles .title1 {
+    margin-bottom: 24px;
+  }
+  .promo__titles .title1, .promo__titles .title2 {
+    font-size: 35px;
+  }
+  .promo__titles .title2 span::after {
+    bottom: -20px;
+    height: 15px;
+  }
+  .promo__date h3, .promo__date p {
+    font-size: 25px;
+  }
+  .promo__date p label:nth-of-type(2) {
+    margin-top: -30px;
+  }
+  .promo .promo__date h3 {
+    margin-bottom: 0px;
+  }
+  .promo__date p span {
+    height: 4px;
+    width: 80px;
+  }
+  .promo__btn {
+    height: 50%;
+    width: 50%;
+  }
+  .promo__btn label {
+    font-size: 19px;
+  }
+  .invitation {
+    padding-top: 70px;
+  }
+  .main-title {
+    font-size: 28px;
+  }
+  .invitation__title {
+    margin-bottom: 50px;
+  }
+  .invitation__cards-subrow {
+    row-gap: 30px;
+  }
+  .invitation__card3 {
+    padding: 35px 30px;
+  }
+  .invitation__card3 .card-content__svg {
+    width: 52px;
+    height: 48px;
+  }
+  .invitation__card3 .card-content__svg {
+    margin-bottom: 20px;
+  }
+  .invitation__card1 .card-content__paragraph,
+  .invitation__card2 .card-content__paragraph,
+  .invitation__card3 .card-content__paragraph {
+    font-size: 24px;
+  }
+  .invitation hr {
+    margin: 50px auto;
+  }
+  .info-row__title h1 {
+    font-size: 37px;
+  }
+  .info-row__column1:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 505px) {
+  .header {
+    padding-left: 40px;
+  }
+  .header__menu, .header__btns-wrap {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .header__btns-wrap .btns-wrap__regist-btn, .header__btns-wrap .btns-wrap__question-btn {
+    width: 156px;
+    text-align: center;
+    padding: 10px initial;
+  }
+  .header__menu li a, .header__btns-wrap .btns-wrap__btn {
+    font-size: 16px;
+  }
+  .promo, .invitation {
+    padding: 50px 40px;
+  }
+  .promo__titles .title1 {
+    margin-bottom: 20px;
+  }
+  .promo__titles .title1, .promo__titles .title2 {
+    font-size: 25px;
+  }
+  .promo__titles .title2 span::after {
+    bottom: -10px;
+    height: 10px;
+  }
+  .promo__date h3, .promo__date p {
+    font-size: 20px;
+  }
+  .promo__date p label:nth-of-type(2) {
+    margin-top: -40px;
+  }
+  .promo .promo__date h3 {
+    margin-bottom: -10px;
+  }
+  .promo__btn {
+    height: 45%;
+    width: 50%;
+    margin-bottom: 10%;
+  }
+  .promo__btn label {
+    font-size: 14px;
+  }
+  .promo__pills .pill span {
+    font-size: 18px;
+  }
+  .promo__pills .pill1 {
+    padding: 16px 33px 9px 33px;
+  }
+  .promo__pills .pill2  {
+    padding: 12px 33px 13px 33px;
+  } 
+  .promo__pills .pill3 {
+    padding: 16px 31px 13px 31px;
+  }
+  .promo__pills .pill4 {
+    padding: 15px 31px 11px 31px;
+  }
+  .main-title {
+    font-size: 24px;
+  }
+  .invitation__title {
+    margin-bottom: 35px;
+  }
+  .invitation__cards-subrow {
+    row-gap: 20px;
+  }
+  .invitation__card1 .card-content__paragraph,
+  .invitation__card2 .card-content__paragraph,
+  .invitation__card3 .card-content__paragraph {
+    font-size: 18px;
+  }
+  .invitation hr {
+    margin: 30px auto;
+  }
+  .info-row__title h1 {
+    font-size: 32px;
+  }
+}
