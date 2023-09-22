@@ -325,7 +325,7 @@ section, footer {
 .info-row__column1:before {
   content: url(img/arrow.svg);
   position: absolute;
-  bottom: -15%;
+  bottom: -35%;
   left: 47%;
 }
 .info-row__title h1 {
@@ -428,8 +428,9 @@ section, footer {
   .info-row__paragraph {
     font-size: 27px;
   }
-  .info-row__column1:before {
+  .invitation__info-row .info-row__column1:before {
     transform: scale(0.7);
+    bottom: -55%;
   }
   .info-row__column1:before {
     bottom: 3%;
@@ -607,7 +608,7 @@ section, footer {
   .info-row__title h1 {
     font-size: 43px;
   }
-  .info-row__column1:before {
+  .invitation .invitation__info-row .info-row__column1:before {
     transform: scale(0.6);
     bottom: -55%;
     left: 47%;
@@ -675,7 +676,7 @@ section, footer {
   .info-row__paragraph {
     font-size: 20px;
   }
-  .info-row__column1:before {
+  body .invitation .invitation__info-row .info-row__column1:before {
     transform: rotate(-10deg) scale(0.4);
     bottom: -65%;
     left: 40%;
@@ -752,7 +753,7 @@ section, footer {
   .info-row__title h1 {
     font-size: 37px;
   }
-  .info-row__column1:before {
+  html body .invitation .invitation__info-row .info-row__column1:before {
     display: none;
   }
 }
