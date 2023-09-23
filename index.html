@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
-  <title>Document</title>
+  <title>Ваш путь в IT начинается здесь</title>
+  <link rel="icon" href="img/keyboard.svg">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="fonts/zona pro/stylesheet.css">
   <link rel="stylesheet" href="style.css">
@@ -89,7 +90,7 @@
 
   <section class="promo">
     <div class="container">
-      <div class="row">
+      <div class="row d-none d-sm-flex">
         <div class="col-lg-7 col-12 d-flex flex-column promo__col-wrap1">
           <div class="promo__titles">
             <h1 class="title1 text-center text-lg-start">Ваш путь в IT начинается здесь.</h1>
@@ -136,6 +137,41 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="promo__mobile-adapt d-sm-none d-flex flex-column">
+        <div class="promo__img-wrap position-relative"></div>
+
+        <div class="promo__marquee overflow-hidden"><label for="">Бесплатный вебинар по разработке сайтов с нуля.</label></div>
+
+        <div class="mobile-adapt__date text-center">
+            <label for="" class="">Октябрь 07 <span></span> 00:00</label>
+        </div>
+
+        <div class="promo__pills d-flex flex-wrap justify-content-center justify-content-lg-start">
+          <div class="first-row-pills-wrap">
+            <div class="pill pill1">
+              <span>HTML</span>
+            </div>
+            <div class="pill pill2">
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <div class="pill pill3">
+            <span>MySQL</span>
+          </div>
+          <div class="pill pill4">
+            <span>CSS</span>
+          </div>
+          <div class="pill pill5">
+            <span>PHP</span>
+          </div>
+        </div>
+
+        <button class="promo__btn">
+          <label>Записаться на вебинар</label>
+        </button>
+
       </div>
     </div>
   </section>
@@ -188,13 +224,13 @@
       </div>
       <hr>
       <div class="row invitation__info-row justify-content-between flex-column flex-md-row align-items-center row-gap-4 row-gap-sm-5 row-gap-md-0">
-        <div class="col-md-5 col-12 info-row__column1 position-relative">
+        <div class="col-md-5 col-12 px-0 info-row__column1 position-relative">
           <div class="info-row__title">
             <h1><span>не верьте </span>нам на слово</h1>
           </div>
             <p class="info-row__paragraph mb-0">Давайте посмотрим, ЧТО вас ждет на наших вебинарах</p>
         </div>
-        <div class="col-md-6 col-12">
+        <div class="col-md-6 col-12 px-0">
           <div class="promo__video-wrap">
             <video poster="" controls preload="metadata">
               <source type="video/mp4" src="">
@@ -205,6 +241,37 @@
     </div>
   </section>
 
+  <footer>
+    <div class="container">
+      <div class="row justify-content-between row-gap-4 row-gap-sm-5 row-gap-md-0">
+        <div class="col-md-8 col-12 px-0">
+          <p class="footer__paragraph1">Если у вас возникли вопросы или вам требуется дополнительная информация о наших вебинарах по веб-программированию, не стесняйтесь обращаться к нам. </p>
+          <p class="footer__paragraph2">Мы всегда готовы помочь и ответить на ваши запросы.</p>
+        </div>
+
+        <div class="footer__wrap2 col-md-3 col-12 px-0 d-md-block d-flex align-items-center justify-content-center column-gap-5">
+          <div class="footer__contacts">
+            <h3>Контакты</h3>
+            <label for="">8 999 999 99 99</label>
+          </div>
+          <ul class="footer__socials">
+            <li><a href=""><img src="img/tg-icon.svg" alt=""></a></li>
+            <li><a href=""><img src="img/vk-icon.svg" alt=""></a></li>
+            <li><a href=""><img src="img/whatsapp-icon.svg" alt=""></a></li>
+            <li><a href=""><img src="img/youtube-icon.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
