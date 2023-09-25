@@ -1351,6 +1351,10 @@ footer {
   .promo__img-wrap {
     margin-top: -90px;
   }
+  .promo__img-wrap img {
+    transform: scale(.88);
+    margin-left: -35px;
+  }
   .promo__img-wrap::before {
     height: 380px;
     top: 30%;
