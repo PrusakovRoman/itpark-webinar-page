@@ -90,8 +90,8 @@
 
   <section class="promo">
     <div class="container">
-      <div class="row d-none d-sm-flex">
-        <div class="col-lg-7 col-12 d-flex flex-column promo__col-wrap1">
+      <div class="row d-none d-lg-flex">
+        <div class="col-lg-7 col-12 d-flex flex-column promo__col-wrap1 px-0">
           <div class="promo__titles">
             <h1 class="title1 text-center text-lg-start">Ваш путь в IT начинается здесь.</h1>
             <h1 class="title2 text-center text-lg-start">Получите реальные навыки <span>бесплатно!</span></h1>
@@ -113,9 +113,11 @@
           </div>
         </div>
 
-        <div class="col-lg-5 col-12 d-flex flex-column align-items-center align-items-lg-start row-gap-0">
+        <div class="col-lg-5 col-12 d-flex flex-column align-items-center align-items-lg-start row-gap-0 px-0">
 
-          <div class="promo__img-wrap position-relative"></div>
+          <div class="promo__img-wrap position-relative">
+            <img src="img/ellipse-img.png" alt="">
+          </div>
 
           <div class="promo__pills d-flex flex-wrap justify-content-center justify-content-lg-start">
             <div class="first-row-pills-wrap">
@@ -139,13 +141,20 @@
         </div>
       </div>
 
-      <div class="promo__mobile-adapt d-sm-none d-flex flex-column">
-        <div class="promo__img-wrap position-relative"></div>
+      <div class="promo__mobile-adapt d-lg-none d-flex flex-column align-items-center">
+        <div class="promo__img-wrap position-relative">
+          <img src="img/ellipse-img.png" alt="">
+        </div>
 
-        <div class="promo__marquee overflow-hidden"><label for="">Бесплатный вебинар по разработке сайтов с нуля.</label></div>
+        <div class="promo__titles d-none d-sm-block">
+          <h1 class="title1 text-center text-lg-start">Ваш путь в IT начинается здесь.</h1>
+          <h1 class="title2 text-center text-lg-start">Получите реальные навыки <span>бесплатно!</span></h1>
+        </div>
+
+        <marquee behavior="" direction="" class="promo__marquee overflow-hidden"><label>Бесплатный вебинар по разработке сайтов с нуля.</label></marquee>
 
         <div class="mobile-adapt__date text-center">
-            <label for="" class="">Октябрь 07 <span></span> 00:00</label>
+            <label class="">Октябрь 07 <span></span> 00:00</label>
         </div>
 
         <div class="promo__pills d-flex flex-wrap justify-content-center justify-content-lg-start">

@@ -3,6 +3,6 @@ $(function() {
     startVisible: true,
     duplicated: true,
     delayBeforeStart: 0,
-    speed: 35
+    speed: 650
   });
 });
