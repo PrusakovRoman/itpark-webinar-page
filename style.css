@@ -197,7 +197,9 @@ section {
 }
 .promo__pills .pill {
   border-radius: 74px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: .2s;
 }
 .promo__pills .pill:hover {
@@ -216,7 +218,7 @@ section {
   background-color: #000;
 }
 .promo__pills .pill1 {
-  padding: 16px 63px 9px 63px;
+  padding: 14px 63px 9px 63px;
 }
 .promo__pills .pill2  {
   padding: 12px 63px 13px 63px;
@@ -373,9 +375,89 @@ section {
   height: 100%;
 }
 
+.information {
+  padding: 190px 100px 130px 200px;
+}
+.information__subrow {
+  row-gap: 77px;
+}
+.information__subrow:nth-of-type(1) {
+  margin-bottom: 130px;
+}
+.information__subrow h1 {
+  color: #000;
+  font-family: Zona Pro;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.information__menu {
+  list-style: none;
+  padding-left: 50px;
+}
+.information__menu li {
+  color: #000;
+  font-family: Moscow Sans;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: relative;
+}
+.information__menu li:nth-of-type(1) {
+  font-size: 65px;
+  margin-bottom: 32px;
+}
+.information__menu li:nth-of-type(1) span {
+  color: #493990;
+  font-family: Zona Pro;
+  font-weight: 900;
+}
+.information__menu li:nth-of-type(2) {
+  font-size: 55px;
+}
+.information__menu li:before {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: -50px;
+}
+.information__menu li:nth-of-type(1):before {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.information__menu li:nth-of-type(2):before {
+  top: 20%;
+}
+.information__date h1,
+.information__place {
+  row-gap: 50px;
+}
+.information__date h1 span {
+  height: 8px;
+  width: 215px;
+  background-color: #000;
+}
+.place__title h1 {
+  font-family: Zona Pro;
+  font-weight: 900;
+}
+.place__paragraph {
+  font-family: Moscow Sans;
+  font-size: 48px;
+  font-weight: 300;
+}
+.place__paragraph span {
+  color: #493990;
+  font-family: Zona Pro;
+  font-weight: 900;
+}
+
+
 .programm {
   background-color: #EFF4F7;
-  border: 1px solid #000;
 }
 .header__img-wrap {
   margin: 0 auto;
@@ -594,13 +676,49 @@ footer {
   .promo__col-wrap1, .promo__data-wrap {
     row-gap: 100px;
   }
+  .information__subrow:nth-of-type(1) {
+    row-gap: 55px;
+    margin-bottom: 100px;
+  }
+  .information__menu {
+    padding-left: 40px;
+  }
+  .information__menu li:nth-of-type(1) {
+    font-size: 48px;
+  }
+  .information__menu li:nth-of-type(2) {
+    font-size: 45px;
+  }
+  .information__menu li:before {
+    left: -40px;
+    width: 15px;
+    height: 15px;
+  }
+  .information__menu li:nth-of-type(2):before {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .information__date h1,
+  .information__place {
+    row-gap: 35px;
+  } 
+  .information__date h1 span {
+    width: 170px;
+    height: 6px;
+  }
+  .place__paragraph {
+    font-size: 38px;
+  }
   footer {
     padding: 55px 200px 140px 70px;
   }
 }
 @media screen and (max-width: 1620px) {
-  .promo, .programm {
+  .promo, .programm, .information {
     padding-top: 120px;
+  }
+  .information {
+    padding-bottom: 120px;
   }
   .promo__titles .title1, .promo__titles .title2 {
     font-size: 55px;
@@ -661,6 +779,10 @@ footer {
     bottom: 3%;
   }
 
+  .information__date h1 span {
+    width: 130px;
+  }
+
   .header__title {
     margin-top: 10px;
   }
@@ -702,6 +824,12 @@ footer {
     transform: scale(.9);
   }
 
+}
+@media screen and (max-width: 1597px) {
+  .information__menu li:nth-of-type(2):before {
+    top: 20%;
+    transform: translateY(0);
+  }
 }
 @media screen and (max-width: 1510px) {
   .first-row-pills-wrap {
@@ -787,7 +915,7 @@ footer {
     font-size: 30px;
   }
   .promo__pills .pill1 {
-    padding: 16px 53px 9px 53px;
+    padding: 13px 53px 9px 53px;
   }
   .promo__pills .pill2  {
     padding: 12px 53px 13px 53px;
@@ -820,6 +948,36 @@ footer {
   }
   .invitation hr {
     margin: 80px auto;
+  }
+
+  .information__subrow:nth-of-type(1) {
+    row-gap: 40px;
+    margin-bottom: 70px;
+  }
+  .information__menu {
+    padding-left: 30px;
+  }
+  .information__menu li:nth-of-type(1) {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  .information__menu li:nth-of-type(2) {
+    font-size: 38.5px;
+  }
+  .information__menu li:before {
+    left: -30px;
+    width: 10px;
+    height: 10px;
+  }
+  .information__date h1,
+  .information__place {
+    row-gap: 25px;
+  } 
+  .information__date h1 span {
+    width: 120px;
+  }
+  .place__paragraph {
+    font-size: 32px;
   }
   
   .programm__path {
@@ -920,7 +1078,7 @@ footer {
     font-size: 22px;
   }
   .promo__pills .pill1 {
-    padding: 16px 43px 9px 43px;
+    padding: 13px 43px 9px 43px;
   }
   .promo__pills .pill2  {
     padding: 12px 43px 13px 43px;
@@ -970,6 +1128,29 @@ footer {
     transform: scale(0.6);
     bottom: -55%;
     left: 47%;
+  }
+
+  .information {
+    padding: 100px 100px 100px 180px;
+  }
+  .information__subrow:nth-of-type(1) {
+    row-gap: 25px;
+  }
+  .information__menu li:nth-of-type(1) {
+    font-size: 33px;
+  }
+  .information__menu li:nth-of-type(2) {
+    font-size: 31px;
+  }
+  .information__date h1,
+  .information__place {
+    row-gap: 20px;
+  } 
+  .information__date h1 span {
+    width: 115px;
+  }
+  .place__paragraph {
+    font-size: 25px;
   }
 
   .header__title {
@@ -1120,6 +1301,42 @@ footer {
     left: 40%;
   } 
 
+  .information {
+    padding-right: 90px;
+  }
+  .information__subrow:nth-of-type(1) {
+    row-gap: 15px;
+    margin-bottom: 40px;
+  }
+  .information h1 {
+    font-size: 35px !important;
+  }
+  .information__menu {
+    padding-left: 20px;
+  }
+  .information__menu li:before {
+    width: 8px;
+    height: 8px;
+    left: -20px;
+  }
+  .information__menu li:nth-of-type(1) {
+    font-size: 26px;
+  }
+  .information__menu li:nth-of-type(2) {
+    font-size: 25px;
+  }
+  .information__date h1,
+  .information__place {
+    row-gap: 12px;
+  } 
+  .information__date h1 span {
+    width: 75px;
+    height: 5px;
+  }
+  .place__paragraph {
+    font-size: 20px;
+  }
+
   .header__title {
     margin-top: -15px;
   }
@@ -1189,7 +1406,7 @@ footer {
   .header {
     padding: 5px 16px 5px 80px;
   }
-  .promo, .invitation, .programm {
+  .promo, .invitation, .programm, .information {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -1260,6 +1477,48 @@ footer {
     display: none;
   }
 
+  .information {
+    padding: 50px 70px;
+  }
+  .information__subrow:nth-of-type(1) {
+    row-gap: 8px;
+    margin-bottom: 25px;
+  }
+  .information__subrow:nth-of-type(2) {
+    row-gap: 25px;
+  }
+  .information__menu li:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+  .information h1 {
+    font-size: 28px !important;
+  }
+  .information__menu {
+    padding-left: 16px;
+  }
+  .information__menu li:before {
+    width: 7px;
+    height: 7px;
+    left: -16px;
+  }
+  .information__menu li:nth-of-type(1) {
+    font-size: 21px;
+  }
+  .information__menu li:nth-of-type(2) {
+    font-size: 20px;
+  }
+  .information__date h1,
+  .information__place {
+    row-gap: 12px;
+  } 
+  .information__date h1 span {
+    height: 4px;
+  }
+  .place__paragraph {
+    font-size: 19px;
+    margin-top: 5px;
+  }
+
   .header__title {
     margin-top: -35px;
   }
@@ -1326,16 +1585,16 @@ footer {
     font-size: 18px;
   }
   .promo__pills .pill1 {
-    padding: 14px 25px 7px 25px;
+    padding: 10px 25px 7px 25px;
   }
   .promo__pills .pill2  {
     padding: 10px 25px 11px 25px;
   } 
   .promo__pills .pill3 {
-    padding: 16px 30px 7px 30px;
+    padding: 8px 30px 7px 30px;
   }
   .promo__pills .pill4 {
-    padding: 15px 30px 9px 30px;
+    padding: 11px 30px 9px 30px;
   }
   .promo__btn {
     width: 90%;
@@ -1370,6 +1629,29 @@ footer {
     bottom: 7px;
   }
 
+  .information__subrow:nth-of-type(1) {
+    row-gap: 8px;
+    margin-bottom: 15px;
+  }
+  .information__subrow:nth-of-type(2) {
+    row-gap: 15px;
+  }
+  .information h1 {
+    font-size: 24px !important;
+  }
+  .information__menu li:nth-of-type(1) {
+    font-size: 18px;
+  }
+  .information__menu li:nth-of-type(2) {
+    font-size: 17px;
+  }
+  .information__date h1 span {
+    height: 3px;
+    width: 50px;
+  }
+  .place__paragraph {
+    font-size: 17px;
+  }
 
   .programm {
     padding-top: 10px;
@@ -1431,7 +1713,7 @@ footer {
   .header__menu li a, .header__btns-wrap .btns-wrap__btn {
     font-size: 16px;
   }
-  .promo, .invitation, .programm, footer {
+  .promo, .invitation, .information, .programm, footer {
     padding: 50px 40px;
   }
   .promo__titles .title1 {
@@ -1454,19 +1736,19 @@ footer {
     font-size: 17px;
   }
   .promo__pills .pill1 {
-    padding: 16px 33px 9px 33px;
+    padding: 11px 33px 9px 33px;
   }
   .promo__pills .pill2  {
-    padding: 12px 33px 13px 33px;
+    padding: 13px 33px 13px 33px;
   } 
   .promo__pills .pill3 {
-    padding: 16px 31px 13px 31px;
+    padding: 12px 31px 13px 31px;
   }
   .promo__pills .pill4 {
-    padding: 15px 31px 11px 31px;
+    padding: 12px 31px 11px 31px;
   }
   .promo__pills .pill5 {
-    padding: 15px 31px 11px 31px;
+    padding: 12px 31px 11px 31px;
   }
   .promo__mobile-adapt .promo__marquee label {
     font-size: 25px;
@@ -1491,6 +1773,38 @@ footer {
   }
   .info-row__title h1 {
     font-size: 32px;
+  }
+
+  .information__subrow {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .information__subrow:nth-of-type(1) {
+    margin-bottom: 12px;
+  }
+  .information__subrow:nth-of-type(2) {
+    row-gap: 18px;
+  }
+  .information h1 {
+    font-size: 22px !important;
+  }
+  .information__menu li:nth-of-type(1) {
+    font-size: 17px;
+  }
+  .information__menu li:nth-of-type(2) {
+    font-size: 16px;
+  }
+  .information__menu li:before {
+    width: 6px;
+    height: 6px;
+  }
+  .information__date h1 span {
+    height: 3px;
+    width: 34px;
+  }
+  .place__paragraph {
+    font-size: 17px;
+    margin-top: 2px;
   }
 
   .programm {
@@ -1536,6 +1850,21 @@ footer {
   .programm__path {
     margin-top: 12px;
   }
+  .promo__pills .pill1 {
+    padding: 12px 33px 9px 33px;
+  }
+  .promo__pills .pill2  {
+    padding: 14px 33px 13px 33px;
+  } 
+  .promo__pills .pill3 {
+    padding: 14px 31px 13px 31px;
+  }
+  .promo__pills .pill4 {
+    padding: 13px 31px 11px 31px;
+  }
+  .promo__pills .pill5 {
+    padding: 14px 31px 13px 31px;
+  }
   .ellipse-wrap__ellipse {
     width: 50px;
     height: 50px;
@@ -1543,6 +1872,24 @@ footer {
   .ellipse-wrap__ellipse span {
     font-size: 30px;
   }
+
+  .information h1 {
+    font-size: 18px !important;
+  }
+  .information__menu li:nth-of-type(1) {
+    font-size: 15px;
+  }
+  .information__menu li:nth-of-type(2) {
+    font-size: 14px;
+  }
+  .information__date h1 span {
+    height: 2px;
+  }
+  .place__paragraph {
+    font-size: 15px;
+    margin-top: 1px;
+  }
+
   .row__paragraph p {
     font-size: 15px;
   }
