@@ -2293,7 +2293,7 @@ footer {
   .header__menu li a, .header__btns-wrap .btns-wrap__btn {
     font-size: 16px;
   }
-  .promo, .invitation, .information, .programm, footer {
+  .promo, .invitation, .information, footer {
     padding: 50px 30px;
   }
   .information, footer {
@@ -2416,7 +2416,7 @@ footer {
   }
 
   .programm {
-    padding-top: 0px;
+    padding: 0px 20px 50px 20px;
   }
   .header__title {
     margin-top: -55px;
