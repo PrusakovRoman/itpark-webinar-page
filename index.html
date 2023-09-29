@@ -4,15 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
   <title>Ваш путь в IT начинается здесь</title>
-  <link rel="icon" href="img/keyboard.svg">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
   <link rel="stylesheet" href="fonts/zona pro/stylesheet.css">
+
+  <!-- <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"> -->
+
+  <link rel="icon" href="img/keyboard.svg">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
-
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid p-0 d-flex align-items-center">
 
@@ -47,44 +53,6 @@
           </div>
         </div>
       </nav>
-
-
-      <!-- <nav class="navbar navbar-expand-lg">
-      
-        <div class="container-fluid d-flex justify-content-between">
-
-          <a href="" class="navbar-brand col-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="138" height="27" viewBox="0 0 138 27" fill="none">
-          <path d="M0 0H4.73946L4.82143 26.7589H0V0Z" fill="white"/>
-          <path d="M7.47327 0L21.2143 0.0287058V5.08097H16.6866L16.7774 26.7589H11.9962L11.8911 5.0714H7.48283L7.47327 0Z" fill="white"/>
-          <path d="M51.1881 0H69.0274V27H64.2588V4.80703H55.9758V27H51.2072L51.1881 0Z" fill="white"/>
-          <path d="M119.893 0H124.679V9.30703L131.437 0H137.127L128.436 12.0512L137.974 27H132.355L124.698 15.0064V27H119.913L119.893 0Z" fill="white"/>
-          <path d="M87.127 0H82.2911L72.6434 27H77.5948L78.7785 23.7665L81.3817 16.4264L84.7403 7.15778L88.0797 16.4264L90.0814 22.1162L91.7992 27H96.7506L87.127 0Z" fill="white"/>
-          <path d="M114.254 3.45895C113.609 2.29358 112.602 1.36635 111.382 0.815565C110.168 0.271855 108.189 0 105.447 0H100.367V5.01332H106.505C107.984 5.01332 108.998 5.19083 109.546 5.54584C109.922 5.79181 110.226 6.13325 110.425 6.53476C110.623 6.93627 110.71 7.38327 110.677 7.82942C110.691 8.36996 110.552 8.90366 110.276 9.3694C110.016 9.7831 109.627 10.1014 109.169 10.2761C108.359 10.5072 107.516 10.6013 106.674 10.5544H100.367V27H105.152V15.5677C107.593 15.5677 109.275 15.4238 110.198 15.1455C111.697 14.705 113.008 13.788 113.93 12.5357C114.888 11.1589 115.371 9.51115 115.307 7.83901C115.35 6.31248 114.986 4.80176 114.254 3.45895Z" fill="white"/>
-          <path d="M87.831 23.1429L84.697 23.1381L81.5631 23.1334L83.1349 19.1628L84.7066 15.1875L86.2688 19.1628L87.831 23.1429Z" fill="white"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M40.1467 0.567414C40.1303 0.237954 39.8527 -0.0157449 39.5265 0.000761932C39.2006 0.0172553 38.9496 0.297274 38.9655 0.626388V0.626406L38.9655 0.626705L38.9655 0.626924V0.627191L38.9656 0.628477L38.9658 0.634334L38.966 0.641193C38.9664 0.65335 38.967 0.672688 38.9674 0.698416C38.9682 0.749938 38.9684 0.826695 38.9658 0.922409C38.9605 1.11489 38.9441 1.37863 38.8999 1.66511C38.8064 2.27234 38.6097 2.838 38.2763 3.13728C37.9833 3.4003 37.5248 3.49505 36.8153 3.62186L36.775 3.62905C36.1575 3.73921 35.3363 3.88568 34.7284 4.4314C34.1272 4.97109 33.8781 5.84417 33.7638 6.46009C33.7031 6.78699 33.6731 7.08444 33.6581 7.29978C33.6505 7.40793 33.6467 7.49663 33.6448 7.55944C33.6438 7.5909 33.6433 7.61595 33.643 7.63383L33.6429 7.64346L33.6428 7.65517L33.6427 7.66164V7.66379V7.66461V7.66492C33.6427 7.66508 33.6427 7.66522 34.2341 7.66522H33.6427C33.6427 7.69913 33.6455 7.7324 33.6509 7.76475H26.744C25.4377 7.76475 24.3788 8.83442 24.3788 10.1539V17.3214C24.3788 18.6409 25.4377 19.7105 26.744 19.7105H41.7241C43.0304 19.7105 44.0893 18.6409 44.0893 17.3214V10.1539C44.0893 8.83442 43.0304 7.76475 41.7241 7.76475H34.8172C34.8225 7.7326 34.8253 7.69959 34.8254 7.6659V7.66566V7.66546V7.66522L34.8254 7.66379L34.8255 7.65151C34.8257 7.63982 34.8261 7.62132 34.8268 7.59677C34.8283 7.54762 34.8314 7.47453 34.8378 7.38358C34.8505 7.20073 34.8759 6.95067 34.9261 6.68027C35.0336 6.10162 35.2281 5.58104 35.514 5.32433C35.8417 5.03019 36.3282 4.92206 37.0214 4.79818L37.0596 4.79137L37.1129 4.78193C37.7094 4.67647 38.4971 4.53718 39.0619 4.0302C39.7195 3.43992 39.9663 2.51236 40.0685 1.84876C40.1223 1.49982 40.1417 1.18375 40.1479 0.955265C40.1511 0.840499 40.1509 0.746487 40.1499 0.679862C40.1494 0.646517 40.1486 0.619938 40.148 0.600944C40.1477 0.591443 40.1474 0.583832 40.1472 0.578211L40.1468 0.571285L40.1467 0.568963L40.1467 0.568091L40.1467 0.567729C40.1467 0.567568 40.1467 0.567414 39.5561 0.597303L40.1467 0.567414ZM26.3498 10.353H27.9267V12.1449H26.3498V10.353ZM30.2919 10.353H28.7151V12.1449H30.2919V10.353ZM31.0804 10.353H32.6572V12.1449H31.0804V10.353ZM35.0225 12.1449V10.353H33.4456V12.1449H35.0225ZM35.8109 10.353H37.3877V12.1449H35.8109V10.353ZM39.753 10.353H38.1762V12.1449H39.753V10.353ZM40.5414 10.353H42.1183V12.1449H40.5414V10.353ZM27.9267 15.5295H26.3498V17.3214H27.9267V15.5295ZM39.753 15.5295V17.3214H28.7151V15.5295H39.753ZM42.1183 15.5295H40.5414V17.3214H42.1183V15.5295ZM27.5325 12.9413H29.1093V14.7331H27.5325V12.9413ZM31.4746 12.9413H29.8977V14.7331H31.4746V12.9413ZM32.263 12.9413H33.8398V14.7331H32.263V12.9413ZM36.2051 12.9413H34.6283V14.7331H36.2051V12.9413ZM36.9935 12.9413H38.5704V14.7331H36.9935V12.9413ZM40.9356 12.9413H39.3588V14.7331H40.9356V12.9413Z" fill="#FD9207"/>
-            </svg>
-          </a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-            <ul class="header__menu m-0">
-              <li><a href="">Где и когда</a></li>
-              <li><a href="">Программа вебинара</a></li>
-              <li><a href="">FAQ</a></li>
-            </ul>
-            <div class="header__btns-wrap d-flex justify-content-end">
-              <a href="" class="btns-wrap__btn btns-wrap__question-btn">Задать вопрос</a>
-              <a href="" class="btns-wrap__btn btns-wrap__regist-btn">Хочу на вебинар</a>
-            </div>
-          </div>
-
-        </div>
-      </nav> -->
-
     </div>
   </header>
 
@@ -250,7 +218,7 @@
     </div>
   </section>
 
-  <div class="inspiration">
+  <section class="inspiration">
     <div class="container">
       <div class="inspiration__inspiration-text-row row justify-content-between flex-column flex-lg-row row-gap-3 row-gap-sm-4 row-gap-lg-0">
         <div class="col">
@@ -310,7 +278,55 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- <section class="comments">
+    <div class="container">
+      <div class="comments__title">
+        <h1 class="main-title text-center">Отзывы участников</h1>
+      </div>
+
+      <div class="comments__slider-wrap">
+        <div class="regular slider slider-wrap__slider">
+          <div class="slider-wrap__testimonial">
+            <div class="testimonial__testimonial-name">
+              <label for="">Владимир Коныш</label>
+            </div>
+            <div class="testimonial__testimonial-body">
+              <p class="mb-0">Вебинары без всякой рутины и тягомотины. Сверстал, оживил, добавил функционал и форма входа на сайт готова за каких-то 3 занятия. Было круто.</p>
+            </div>
+          </div>
+
+          <div class="slider-wrap__testimonial">
+            <div class="testimonial__testimonial-name">
+              <label for="">Владимир Коныш</label>
+            </div>
+            <div class="testimonial__testimonial-body">
+              <p class="mb-0">Вебинары без всякой рутины и тягомотины. Сверстал, оживил, добавил функционал и форма входа на сайт готова за каких-то 3 занятия. Было круто.</p>
+            </div>
+          </div>
+
+          <div class="slider-wrap__testimonial">
+            <div class="testimonial__testimonial-name">
+              <label for="">Владимир Коныш</label>
+            </div>
+            <div class="testimonial__testimonial-body">
+              <p class="mb-0">Вебинары без всякой рутины и тягомотины. Сверстал, оживил, добавил функционал и форма входа на сайт готова за каких-то 3 занятия. Было круто.</p>
+            </div>
+          </div>
+
+          <div class="slider-wrap__testimonial">
+            <div class="testimonial__testimonial-name">
+              <label for="">Владимир Коныш</label>
+            </div>
+            <div class="testimonial__testimonial-body">
+              <p class="mb-0">Вебинары без всякой рутины и тягомотины. Сверстал, оживил, добавил функционал и форма входа на сайт готова за каких-то 3 занятия. Было круто.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
   <section class="information">
     <div class="container">
@@ -444,6 +460,62 @@
     </div>
   </section>
 
+  <section class="community">
+    <div class="container">
+      <div class="community__community-header">
+        <div class="community-header__img text-center">
+          <img src="img/community-ttl.svg" alt="">
+        </div>
+        <div class="community-header__title">
+          <h1 class="main-title text-center">Сообщество программистов</h1>
+        </div>
+        <div class="community-header__paragraph">
+          <p class="mb-0">Присоединяйтесь к нашему дружному сообществу начинающих программистов! После регистрации на вебинар, вы автоматически становитесь участником нашего активного онлайн-чата, где вы сможете:</p>
+        </div>
+      </div>
+
+      <div class="community__community-row row justify-content-between">
+        <div class="col-xxl-5 col-lg-6 col-sm-7 col-9 community-row__community-info">
+          <label for="" class="community-info__title">Обмениваться опытом:</label>
+          <p class="mb-0 community-info__paragraph">Поделитесь своими успехами, вопросами и идеями с другими участниками, которые, как и вы, стремятся освоить мир веб-разработки.</p>
+        </div>
+        <div class="col-xxl-7 col-lg-6 col-sm-5 col-3 position-relative">
+          <img src="img/commnt-arrow1.svg" class="community-row__img community-row__img1" alt="">
+        </div>
+
+        <div class="col-xxl-7 col-lg-6 col-sm-5 col-3 position-relative">
+          <img src="img/commnt-arrow2.svg" class="community-row__img community-row__img2" alt="">
+        </div>
+        <div class="col-xxl-5 col-lg-6 col-sm-7 col-9 community-row__community-info">
+          <label for="" class="community-info__title">Получать поддержку:</label>
+          <p class="mb-0 community-info__paragraph">Наши опытные инструкторы и более опытные участники всегда готовы помочь вам в разрешении любых технических сложностей или вопросов, с которыми вы столкнетесь на своем пути.</p>
+        </div>
+
+        <div class="col-lg-6 col-sm-7 col-9 community-row__community-info community-row__community-info3">
+          <label for="" class="community-info__title">Учиться вместе: </label>
+          <p class="mb-0 community-info__paragraph">Мы организуем регулярные онлайн-сессии обучения, мастер-классы и групповые проекты, чтобы вы могли продолжать углублять свои знания и навыки.</p>
+        </div>
+        <div class="col-xxl-7 col-lg-6 col-sm-5 col-3 position-relative"></div>
+
+        <div class="col-xxl-7 col-lg-6 col-sm-5 col-3 position-relative">
+          <img src="img/commnt-arrow3.svg" class="community-row__img community-row__img3" alt="">
+        </div>
+        <div class="col-xxl-5 col-lg-6 col-sm-7 col-9 community-row__community-info">
+          <label for="" class="community-info__title">Получать полезности и учебные материалы:</label>
+          <p class="mb-0 community-info__paragraph">Вы получите доступ к дополнительным учебным материалам, пошаговым алгоритмам и инструкциям,что пошагово нужно делать, чтобы освоить профессию.</p>
+        </div>
+
+        <div class="col-xxl-5 col-lg-6 col-sm-7 col-9 community-row__community-info community-row__community-info5">
+          <label for="" class="community-info__title">Информироваться о событиях:</label>
+          <p class="mb-0 community-info__paragraph">Будьте в курсе всех предстоящих мероприятий, включая дополнительные вебинары, конкурсы и специальные мероприятия.</p>
+        </div>
+        <div class="col-xxl-7 col-lg-6 col-sm-5 col-3 position-relative">
+          <img src="img/commnt-arrow4.svg" class="community-row__img community-row__img4" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <div class="container">
       <div class="row justify-content-between row-gap-4 row-gap-sm-5 row-gap-md-0">
@@ -474,6 +546,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
 
   <script src="script.js"></script>
 </body>
