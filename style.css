@@ -507,7 +507,7 @@ opacity: 1;
 } */
 
 .information {
-  padding: 190px 100px 130px 200px;
+  padding: 140px 114px 150px 104px;
 }
 .information__subrow {
   row-gap: 77px;
@@ -559,27 +559,29 @@ opacity: 1;
 .information__menu li:nth-of-type(2):before {
   top: 20%;
 }
-.information__date h1,
-.information__place {
+.information__date h1 {
   row-gap: 50px;
+}
+.information__place {
+  row-gap: 64px;
+  flex-direction: column;
 }
 .information__date h1 span {
   height: 8px;
   width: 215px;
   background-color: #000;
 }
-.place__title h1 {
-  font-family: Zona Pro;
-}
-.place__paragraph {
-  font-family: Moscow Sans;
-  font-size: 48px;
-  font-weight: 300;
-}
-.place__paragraph span {
+.information__label {
   color: #493990;
+  font-size: 48px;
   font-family: Zona Pro;
+  font-style: normal;
   font-weight: 900;
+  line-height: normal;
+}
+.information__span {
+  color: #000;
+  font-size: 64px;
 }
 
 .programm {
@@ -723,7 +725,6 @@ opacity: 1;
 
 .community {
   padding: 220px 55px 220px 105px;
-  border: 1px solid #000;
 }
 .community-header__title {
   margin: 78px 0 43px 0;
@@ -769,6 +770,34 @@ opacity: 1;
 .community-row__img4 {
   top: 0;
   left: 60px;
+}
+
+.bonds {
+  background-color: #7157A4;
+  padding: 0;
+  /* padding-left: 100px; */
+}
+.bonds__content {
+  flex: 0 0 100%;
+}
+.bonds__container {
+  display: flex;
+  align-items: center;
+}
+.bonds__bonds-body {
+  width: 50%;
+  padding: 70px 60px 70px 0px;
+}
+.bonds-body__text p {
+  color: #FFF;
+  font-family: Zona Pro;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: normal;
+  font-style: normal;
+}
+.bonds__image img {
+  max-width: 100%;
 }
 
 footer {
@@ -828,6 +857,26 @@ footer {
   }
 }
 
+@media screen and (min-width: 767px) {
+  .bonds {
+    display: flex;
+  }
+  .bonds__image {
+    position: relative;
+    flex: 0 0 50%;
+    transform: translateX(-100%);
+    padding: 0 0 28% 0;
+  } 
+  .bonds__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 @media screen and (max-width: 1710px) {
   .footer__paragraph1 {
     margin-bottom: 45px;
@@ -871,16 +920,18 @@ footer {
     top: 50%;
     transform: translateY(-50%);
   }
-  .information__date h1,
-  .information__place {
+  .information__date h1 {
     row-gap: 35px;
   } 
   .information__date h1 span {
     width: 170px;
     height: 6px;
   }
-  .place__paragraph {
-    font-size: 38px;
+  .information__label {
+    font-size: 42px;
+  }
+  .information__span {
+    font-size: 50px;
   }
 
   .community-header__paragraph h1 {
@@ -1082,6 +1133,10 @@ footer {
     font-size: 25px;
   }
 
+  .information__place {
+    row-gap: 50px;
+  }
+
   .path__row {
     padding: 20px 38px;
     height: 160px;
@@ -1228,6 +1283,13 @@ footer {
     font-size: 22.5px;
   }
 
+  .information__label {
+    font-size: 30px;
+  }
+  .information__span {
+    font-size: 38px;
+  }
+
   .information__subrow:nth-of-type(1) {
     row-gap: 40px;
     margin-bottom: 70px;
@@ -1247,15 +1309,14 @@ footer {
     width: 10px;
     height: 10px;
   }
-  .information__date h1,
-  .information__place {
+  .information__date h1 {
     row-gap: 25px;
   } 
   .information__date h1 span {
     width: 120px;
   }
-  .place__paragraph {
-    font-size: 32px;
+  .information__place {
+    row-gap: 35px;
   }
   
   .programm__path {
@@ -1491,7 +1552,7 @@ footer {
   }
 
   .information {
-    padding: 100px 100px 100px 180px;
+    padding: 100px 70px 100px 70px;
   }
   .information__subrow:nth-of-type(1) {
     row-gap: 25px;
@@ -1502,15 +1563,17 @@ footer {
   .information__menu li:nth-of-type(2) {
     font-size: 31px;
   }
-  .information__date h1,
-  .information__place {
+  .information__date h1 {
     row-gap: 20px;
   } 
   .information__date h1 span {
     width: 115px;
   }
-  .place__paragraph {
-    font-size: 25px;
+  .information__label {
+    font-size: 26px;
+  }
+  .information__span {
+    font-size: 34px;
   }
 
   .header__title {
@@ -1714,9 +1777,6 @@ footer {
     font-size: 16px;
   }
 
-  .information {
-    padding-right: 90px;
-  }
   .information__subrow:nth-of-type(1) {
     row-gap: 15px;
     margin-bottom: 40px;
@@ -1738,17 +1798,23 @@ footer {
   .information__menu li:nth-of-type(2) {
     font-size: 25px;
   }
-  .information__date h1,
-  .information__place {
+  .information__date h1 {
     row-gap: 12px;
   } 
   .information__date h1 span {
     width: 75px;
     height: 5px;
   }
-  .place__paragraph {
-    font-size: 20px;
+  .information__place {
+    row-gap: 20px;
   }
+  .information__label {
+    font-size: 22px;
+  }
+  .information__span {
+    font-size: 26px;
+  }
+
   .header__title {
     margin-top: -15px;
   }
@@ -1942,7 +2008,7 @@ footer {
   }
   .inspiration__inspiration-projects-wrap {
     row-gap: 30px;
-}
+  }
   .inspiration-projects-wrap__paragraph p {
     font-size: 20px;
   }
@@ -1967,7 +2033,7 @@ footer {
     margin-bottom: 25px;
   }
   .information__subrow:nth-of-type(2) {
-    row-gap: 25px;
+    row-gap: 28px;
   }
   .information__menu li:nth-of-type(1) {
     margin-bottom: 10px;
@@ -1989,6 +2055,9 @@ footer {
   .information__menu li:nth-of-type(2) {
     font-size: 20px;
   }
+  .information__place {
+    flex-direction: row;
+  }
   .information__date h1,
   .information__place {
     row-gap: 12px;
@@ -1996,9 +2065,11 @@ footer {
   .information__date h1 span {
     height: 4px;
   }
-  .place__paragraph {
-    font-size: 19px;
-    margin-top: 5px;
+  .information__label {
+    font-size: 18px;
+  }
+  .information__span {
+    font-size: 22px;
   }
 
   .header__title {
@@ -2173,7 +2244,7 @@ footer {
     margin-bottom: 15px;
   }
   .information__subrow:nth-of-type(2) {
-    row-gap: 15px;
+    row-gap: 18px;
   }
   .information h1 {
     font-size: 24px !important;
@@ -2188,8 +2259,11 @@ footer {
     height: 3px;
     width: 50px;
   }
-  .place__paragraph {
-    font-size: 17px;
+  .information__label {
+    font-size: 16px;
+  }
+  .information__span {
+    font-size: 18px;
   }
 
   .programm {
@@ -2410,9 +2484,11 @@ footer {
     height: 3px;
     width: 34px;
   }
-  .place__paragraph {
+  .information__label {
+    font-size: 15px;
+  }
+  .information__span {
     font-size: 17px;
-    margin-top: 2px;
   }
 
   .programm {
@@ -2541,9 +2617,15 @@ footer {
   .information__date h1 span {
     height: 2px;
   }
-  .place__paragraph {
-    font-size: 15px;
-    margin-top: 1px;
+  .information__place {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  .information__label {
+    font-size: 14px;
+  }
+  .information__span {
+    font-size: 16px;
   }
 
   .row__paragraph p {
