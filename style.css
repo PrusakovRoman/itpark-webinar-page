@@ -3,6 +3,9 @@ body, * {
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
 }
@@ -85,6 +88,14 @@ section {
 }
 .btns-wrap__regist-btn:hover {
   box-shadow: 0px 0px 10px #DB00FF;
+}
+.header__menu-icon {
+  border: none !important;
+  box-shadow: none !important;
+}
+.header__menu-icon img {
+  width: 30px;
+  height: 30px;
 }
 
 .promo {
@@ -2042,6 +2053,9 @@ footer {
   .faqs__accordion-header label {
     font-size: 20px;
   }
+  .footer__paragraph1 {
+    margin-bottom: 28px;
+  }
   .footer__contacts h3 {
     margin-bottom: 10px;
     font-size: 28px;
@@ -2383,7 +2397,7 @@ footer {
     font-size: 18px;
   }
   .footer__socials {
-    margin-top: 20px;
+    margin-top: 12px;
     column-gap: 0px;
   }
   .footer__socials li {
@@ -2817,6 +2831,12 @@ footer {
   .slick-dots {
     bottom: -30px;
   }
+  .slick-dots li button:before {
+    font-size: 8px;
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: .9;
+  }
   .slider-wrap__testimonial {
     height: 228px;
     padding: 24px 30px;
@@ -2968,10 +2988,6 @@ footer {
   }
   .footer__contacts label {
     font-size: 18px;
-  }
-  .footer__socials {
-    flex-wrap: wrap;
-    max-width: 110px;
   }
 }
 @media screen and (max-width: 505px) {
@@ -3419,6 +3435,6 @@ footer {
   }
   .footer__socials {
     max-width: 100%;
-    margin-top: 5px;
+    margin-top: 7px;
   }
 }
