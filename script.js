@@ -13,14 +13,15 @@ $(document).on('ready', function() {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 6000,
     speed: 500,
     responsive: [
       {
         breakpoint: 576, 
           settings: {
-            arrows: false
+            arrows: false,
+            dots: true
           }
       }
     ]

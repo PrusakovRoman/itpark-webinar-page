@@ -2814,6 +2814,9 @@ footer {
   .slider-wrap__slider {
     width: 100%;
   }
+  .slick-dots {
+    bottom: -30px;
+  }
   .slider-wrap__testimonial {
     height: 228px;
     padding: 24px 30px;
@@ -3284,12 +3287,16 @@ footer {
   .slider-wrap__slider {
     margin: 18px auto;
   }
+  .slick-dots li {
+    margin: 0px 2px;
+  }
   .slider-wrap__testimonial {
     height: 232px;
     padding: 20px 26px;
     border-radius: 28px;
   }
-  .slider-wrap__testimonial8 {
+  .slider-wrap__testimonial8,
+  .slider-wrap__testimonial10 {
     line-height: 100%;
   }
   .testimonial__testimonial-body {
