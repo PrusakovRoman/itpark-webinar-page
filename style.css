@@ -800,6 +800,102 @@ opacity: 1;
   max-width: 100%;
 }
 
+.faqs {
+  background-color: #EFF4F7;
+  padding: 130px 130px 220px 115px;
+}
+.faqs__title {
+  max-width: 759px;
+  margin-bottom: 66px;
+}
+.faqs__title h1 {
+  color: #000;
+  font-family: Zona Pro;
+  font-style: normal;
+  line-height: normal;
+}
+.faqs__title h1 span {
+  color: #5531AB;
+}
+.faqs__accordion,
+.faqs__accordion-header,
+.faqs__accordion-button,
+.faqs__accordion-body {
+  background-color: #EFF4F7;
+}
+.faqs__accordion-header {
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+.faqs__accordion-header:not(:nth-of-type(4)) {
+  border-bottom: none;
+}
+.faqs__accordion-button:not(.collapsed) {
+  border-bottom: 4px solid #000;
+}
+.faqs__accordion-button {
+  padding: 0px 1.25rem !important;
+}
+.faqs__accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: transparent;
+  box-shadow: none;
+}
+.faqs__accordion-button:focus {
+  box-shadow: none;
+}
+.faqs__accordion-button label {
+  font-family: Zona Pro;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.accordion-button::after {
+  width: auto;
+  height: auto;
+  content: "+";
+  background-image: none;
+  color: #000;
+  font-family: Moscow Sans;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  transform: none;
+  content: "-";
+  opacity: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+.faqs__accordion-body {
+  padding: 65px 75px 64px 55px;
+}
+.faqs__accordion-body9 {
+  padding: 65px 75px 0px 55px;
+}
+.faqs__accordion-body label {
+  color: #000;
+  font-family: Moscow Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.faqs__accordion-body9 ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
 footer {
   padding: 55px 200px 340px 70px;
 }
@@ -889,7 +985,8 @@ footer {
   }
 }
 @media screen and (max-width: 1666px) {
-  .main-title {
+  .main-title,
+  .accordion-button::after {
     font-size: 79px !important;
   }
   .promo__col-wrap1, .promo__data-wrap {
@@ -938,6 +1035,13 @@ footer {
     font-size: 40px;
   }
 
+  .faqs__accordion-button label {
+    font-size: 32px;
+  }
+  .faqs__accordion-body label {
+    font-size: 28px;
+  }
+
   footer {
     padding: 55px 200px 140px 70px;
   }
@@ -980,7 +1084,8 @@ footer {
     font-size: 35px;
   }
 
-  .main-title {
+  .main-title,
+  .accordion-button::after {
     font-size: 65px !important;
   }
   .invitation__title {
@@ -1076,10 +1181,24 @@ footer {
     transform: scale(.9);
   }
 
+  .faqs {
+    padding: 120px 70px;
+  }
+  .faqs__accordion-button {
+    padding: 5px 1.25rem !important;
+  }
+  .faqs__accordion-body {
+    font-size: 26px;
+  }
+  .accordion-button:not(.collapsed)::after {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
 
   .footer__paragraph1, 
   .footer__paragraph2,
-  .footer__contacts label {
+  .footer__contacts label,
+  .faqs__accordion-button label {
     font-size: 30px;
   }
   .footer__contacts h3 {
@@ -1222,7 +1341,8 @@ footer {
   .promo__pills .pill4 {
     padding: 15px 41px 11px 41px;
   }
-  .main-title {
+  .main-title,
+  .accordion-button::after {
     font-size: 58px !important;
   }
   .invitation__title {
@@ -1394,8 +1514,26 @@ footer {
     left: -20px;
   }
 
+  .faqs {
+    padding: 100px 70px;
+  }
+  .faqs__title {
+    margin-bottom: 50px;
+  }
+  .faqs__accordion-body {
+    padding: 35px 75px 35px 50px;
+  }
+  .faqs__accordion-body label {
+    font-size: 23px;
+  }
+  .faqs__accordion-body9 label ul {
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+  }
+
   .footer__paragraph1, 
-  .footer__paragraph2 {
+  .footer__paragraph2,
+  .faqs__accordion-header label {
     font-size: 25px;
   }
   .footer__contacts label {
@@ -1466,7 +1604,8 @@ footer {
     margin-left: -55px;
   }
 
-  .main-title {
+  .main-title,
+  .accordion-button::after {
     font-size: 50px !important;
   }
   .invitation__title {
@@ -1631,11 +1770,20 @@ footer {
     bottom: -20px;
   }
 
+  .accordion-button:not(.collapsed)::after {
+    padding-left: 15.5px;
+    padding-right: 15.5px;
+  }
+  .faqs__accordion-body label {
+    font-size: 18px;
+  }
+
   footer {
     padding: 55px 70px 100px 70px;
   }
   .footer__paragraph1, 
-  .footer__paragraph2 {
+  .footer__paragraph2,
+  .faqs__accordion-header label {
     font-size: 20px;
   }
   .footer__contacts h3 {
@@ -1702,7 +1850,8 @@ footer {
     transform: scale(.7);
     margin-left: 0;
   }
-  .main-title { 
+  .main-title,
+  .accordion-button::after { 
     font-size: 40px !important;
   }
   .invitation__title {
@@ -1883,8 +2032,34 @@ footer {
     left: -60px;
   }
 
+  .faqs__title {
+    margin-bottom: 35px;
+  }
+  .faqs__accordion-header {
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+  }
+  .faqs__accordion-button:not(.collapsed) {
+    border-bottom: 3px solid #000;
+  }
+  .accordion-button:not(.collapsed)::after {
+    padding-left: 14.5px;
+    padding-right: 14.5px;
+  }
+  .faqs__accordion-body {
+    padding: 20px 50px 20px 30px;
+  }
+  .faqs__accordion-body label {
+    font-size: 16px;
+  }
+  .faqs__accordion-body9 label ul {
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+  }
+
   .footer__paragraph1,
-  .footer__paragraph2 {
+  .footer__paragraph2,
+  .accordion-header label {
     font-size: 18px;
   }
   .footer__paragraph1 {
@@ -1953,7 +2128,8 @@ footer {
   .invitation {
     padding-top: 70px;
   }
-  .main-title {
+  .main-title,
+  .accordion-button::after {
     font-size: 28px !important;
   }
   .invitation__title {
@@ -2145,6 +2321,33 @@ footer {
     left: -80px;
   }
 
+  .faqs {
+    padding: 50px 60px;
+  }
+  .faqs__title {
+    margin-bottom: 24px;
+  }
+  .faqs__accordion-header label {
+    font-size: 15px;
+  }
+  .accordion-button:not(.collapsed)::after {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .faqs__accordion-body {
+    padding: 15px 35px 14px 20px;
+  }
+  .faqs__accordion-body label {
+    font-size: 14px;
+  }
+  .faqs__accordion-body9 label ul {
+    margin-bottom: .4rem;
+    margin-top: .4;
+  }
+  .faqs__accordion-button {
+    padding: 10px 1rem !important;
+}
+
   footer {
     padding: 50px 70px 70px 70px;
   }
@@ -2333,6 +2536,10 @@ footer {
     left: -110px;
   }
 
+  .faqs {
+    padding: 50px;
+  }
+
   footer {
     padding: 50px 70px;
   }
@@ -2410,7 +2617,8 @@ footer {
   .promo__mobile-adapt .promo__marquee label {
     font-size: 25px;
   }
-  .main-title {
+  .main-title,
+  .accordion-button::after {
     font-size: 24px !important;
   }
   .invitation__title {
@@ -2549,6 +2757,10 @@ footer {
     left: -115px;
   }
 
+  .faqs {
+    padding: 50px 30px;
+  }
+
   .footer__contacts h3 {
     font-size: 22px;
   }
@@ -2672,6 +2884,17 @@ footer {
   }
   .community-row__community-info {
     width: 100%;
+  }
+
+  .faqs__accordion-button {
+    padding: 10px .7rem !important;
+  }
+  .faqs__accordion-body {
+    padding: 15px 20px 14px 14px;
+  }
+  .accordion-button:not(.collapsed)::after {
+    padding-left: 12.5px;
+    padding-right: 12.5px;
   }
 
   .footer__wrap2 {
