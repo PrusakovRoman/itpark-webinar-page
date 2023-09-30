@@ -790,7 +790,6 @@ section {
 .bonds {
   background-color: #7157A4;
   padding: 0;
-  /* padding-left: 100px; */
 }
 .bonds__content {
   flex: 0 0 100%;
@@ -798,6 +797,7 @@ section {
 .bonds__container {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 .bonds__bonds-body {
   width: 50%;
@@ -1015,7 +1015,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 769px) {
   .bonds {
     display: flex;
   }
@@ -1023,7 +1023,6 @@ footer {
     position: relative;
     flex: 0 0 50%;
     transform: translateX(-100%);
-    padding: 0 0 28% 0;
   } 
   .bonds__image img {
     position: absolute;
@@ -1036,6 +1035,13 @@ footer {
 }
 
 @media screen and (max-width: 1710px) {
+  .bonds-body__text p {
+    font-size: 43px;
+  }
+  .bonds__bonds-body {
+    padding: 70px 60px 70px 50px;
+  }
+
   .footer__paragraph1 {
     margin-bottom: 45px;
   }
@@ -1299,6 +1305,10 @@ footer {
   }
   .community-row__img {
     transform: scale(.9);
+  }
+
+  .bonds-body__text p {
+    font-size: 36px;
   }
 
   .faqs {
@@ -1684,6 +1694,13 @@ footer {
     left: -20px;
   }
 
+  .bonds__bonds-body {
+    padding: 70px 60px 70px 40px;
+  }
+  .bonds-body__text p {
+    font-size: 30px;
+  }
+
   .faqs {
     padding: 100px 70px;
   }
@@ -1978,6 +1995,13 @@ footer {
   }
   .community-row__img1 {
     bottom: -20px;
+  }
+
+  .bonds__bonds-body {
+    padding: 40px;
+  }
+  .bonds-body__text p {
+    font-size: 26px;
   }
 
   .accordion-button:not(.collapsed)::after {
@@ -2288,6 +2312,13 @@ footer {
   .community-row__img4 {
     top: -55px;
     left: -60px;
+  }
+
+  .bonds__bonds-body {
+    padding: 20px;
+  }
+  .bonds-body__text p {
+    font-size: 21px;
   }
 
   .faqs__title {
@@ -2616,6 +2647,26 @@ footer {
     left: -80px;
   }
 
+  .bonds {
+    padding-bottom: 50px;
+  }
+  .bonds__bonds-body {
+    padding: 50px 50px 30px 50px;
+    width: 100%;
+  }
+  .bonds-body__text p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .bonds__image {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+  }
+  .bonds__image img {
+    border-radius: 2px;
+  }
+
   .faqs {
     padding: 50px 60px;
   }
@@ -2863,6 +2914,19 @@ footer {
     transform: rotate(-5deg) scale(.3);
     top: -45px;
     left: -110px;
+  }
+
+  .bonds {
+    padding-bottom: 40px;
+  }
+  .bonds__bonds-body {
+    padding: 40px 50px 20px 50px;
+  }
+  .bonds-body__text p {
+    font-size: 18px;
+  }
+  .bonds__image {
+    width: 70%;
   }
 
   .faqs {
@@ -3123,6 +3187,16 @@ footer {
     left: -115px;
   }
 
+  .bonds__bonds-body {
+    padding: 40px 30px 20px 30px;
+  }
+  .bonds-body__text p {
+    font-size: 17px;
+  }
+  .bonds__image {
+    width: 80%;
+  }
+
   .faqs {
     padding: 50px 30px;
   }
@@ -3289,6 +3363,13 @@ footer {
   }
   .community-row__community-info {
     width: 100%;
+  }
+
+  .bonds__bonds-body {
+    padding: 40px 20px 20px 20px;
+  }
+  .bonds-body__text p {
+    font-size: 16px;
   }
 
   .faqs__accordion-button {
