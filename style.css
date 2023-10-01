@@ -2837,6 +2837,10 @@ footer {
   .slider-wrap__slider {
     width: 100%;
   }
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
   .slick-dots {
     bottom: -30px;
   }
@@ -3175,7 +3179,7 @@ footer {
   }
 
   .community {
-    padding: 0px 20px 50px 30px;
+    padding: 0px 30px 50px 30px;
   }
   .community-header__title {
     margin: -65px 0 0px 0;
@@ -3344,7 +3348,7 @@ footer {
   }
 
   .community {
-    padding: 0px 20px 50px 30px;
+    padding: 0px 20px 50px 20px;
   }
   .community-header__title {
     margin: -65px 0 0px 0;
