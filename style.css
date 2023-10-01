@@ -32,9 +32,6 @@ section {
 .logo {
   margin-bottom: 7px;
 }
-.header__burger-btn {
-  color: #fff !important;
-}
 .header__menu {
   list-style: none;
   display: flex;
@@ -301,16 +298,16 @@ section {
 .main-title {
   font-size: 96px;
   font-weight: 900;
+  color: #000;
+  font-style: normal;
+  line-height: normal;
+  font-family: Zona Pro;
 }
 .invitation {
   background-color: #EFF4F7;
 }
 .invitation__title {
   margin-bottom: 130px;
-}
-.invitation__title h1 {
-  color: #000;
-  font-family: Zona Pro;
 }
 .invitation__cards-row {
   column-gap: 20px;
@@ -479,11 +476,6 @@ section {
   background-color: #F1DBFF;
   padding: 140px 37px;
 }
-.comments__title h1 {
-  color: #000;
-  font-family: Zona Pro;
-  font-weight: 900;
-}
 .slider-wrap__slider {
   width: 85%;
   margin: 120px auto;
@@ -635,7 +627,6 @@ section {
 }
 .header__title h1 {
   text-align: center;
-  font-family: Zona Pro;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -767,9 +758,6 @@ section {
 .community-header__title {
   margin: 78px 0 43px 0;
 }
-.community-header__title h1 {
-  font-family: Zona Pro;
-}
 .community-header__paragraph p {
   text-align: center;
   font-family: Moscow Sans;
@@ -845,12 +833,6 @@ section {
 .faqs__title {
   max-width: 759px;
   margin-bottom: 66px;
-}
-.faqs__title h1 {
-  color: #000;
-  font-family: Zona Pro;
-  font-style: normal;
-  line-height: normal;
 }
 .faqs__title h1 span {
   color: #5531AB;
@@ -1388,7 +1370,6 @@ footer {
   .footer__socials img {
     transform: scale(.9);
   }
-
 }
 @media screen and (max-width: 1597px) {
   .information__menu li:nth-of-type(2):before {
@@ -1470,7 +1451,6 @@ footer {
   .row__pic {
     transform: scale(.9);
   }
-
 }
 @media screen and (max-width: 1400px) {
   .header__menu {
@@ -3303,7 +3283,6 @@ footer {
     margin: 0px 2px;
   }
   .slider-wrap__testimonial {
-    /* height: 232px; */
     padding: 20px 26px;
     border-radius: 28px;
   }
