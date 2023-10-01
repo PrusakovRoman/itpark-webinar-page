@@ -1028,6 +1028,8 @@ footer {
 }
 .footer__socials li:nth-of-type(3) {
   margin-left: 10px;
+  position: relative;
+  bottom: 2px;
 }
 
 @keyframes rotate {
@@ -2845,7 +2847,7 @@ footer {
     opacity: .9;
   }
   .slider-wrap__testimonial {
-    height: 228px;
+    height: auto;
     padding: 24px 30px;
   }
   .testimonial__testimonial-body {
@@ -3103,7 +3105,6 @@ footer {
     margin: 20px auto;
   }
   .slider-wrap__testimonial {
-    height: 210px;
     padding: 24px 30px;
   }
   .slider-wrap__testimonial label {
@@ -3298,16 +3299,9 @@ footer {
     margin: 0px 2px;
   }
   .slider-wrap__testimonial {
-    height: 232px;
+    /* height: 232px; */
     padding: 20px 26px;
     border-radius: 28px;
-  }
-  .slider-wrap__testimonial8,
-  .slider-wrap__testimonial10 {
-    line-height: 100%;
-  }
-  .testimonial__testimonial-body {
-    margin-top: 5px;
   }
 
   .information h1 {
