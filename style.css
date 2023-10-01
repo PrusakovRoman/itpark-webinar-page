@@ -79,7 +79,7 @@ section {
 .btns-wrap__question-btn:hover {
   background-color: #fff;
   color: #000;
-  box-shadow: 0px 0px 7px #fff;
+  box-shadow: 0px 0px 2px #fff;
 }
 .btns-wrap__regist-btn {
   background-color: #DB00FF;
@@ -258,9 +258,6 @@ section {
 .promo__mobile-adapt {
   row-gap: 70px;
 }
-.promo__marquee {
-  display: none;
-}
 .promo__mobile-adapt .promo__marquee label {
   font-size: 35px;
   font-family: Zona Pro;
@@ -279,6 +276,26 @@ section {
   display: inline-block;
   position: relative;
   bottom: 12px;
+}
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 120%;
+  height: 54px;
+  overflow-x: hidden;
+  display: none;
+}
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 15s linear infinite;
+}
+.content {
+  font-size: 34px;
+  font-family: Zona Pro;
+  font-weight: 900;
+  color: #000;
 }
 
 .main-title {
@@ -377,11 +394,6 @@ section {
   letter-spacing: 1.4px;
   margin-top: 17px;
   max-width: 560px;
-}
-.promo__video-wrap video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .inspiration {
@@ -947,18 +959,16 @@ section {
 }
 .regist__btn {
   text-decoration: none;
-  border-radius: 45px;
-  padding: 38px 50px 38px 30px;
-  background-color: #29B6F6;
-  max-width: 910px;
+  border-radius: 25px;
+  padding: 38px 50px 38px 50px;
+  background-color: transparent;
+  border: 4px solid #fff;
+  max-width: 810px;
   transition: .2s;
 }
 .regist__btn:hover {
-  box-shadow: 0 0 7px #29B6F6;
-}
-.regist__btn img {
-  width: 100px;
-  height: 100px;
+  box-shadow: 0 0 2px #fff;
+  background-color: #fff;
 }
 .regist__btn label {
   font-family: Zona Pro;
@@ -967,6 +977,9 @@ section {
   font-weight: 900;
   line-height: normal;
   color: #fff;
+}
+.regist__btn:hover > label {
+  color: #000;
 }
 
 footer {
@@ -1023,6 +1036,14 @@ footer {
   }
   100% {
     transform: translate(-15%, 19%) rotate(360deg);
+  }
+}
+@keyframes marquee {
+  0% { 
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
@@ -1147,11 +1168,7 @@ footer {
   }
   .regist__btn {
     max-width: 780px;
-    padding: 28px 50px 28px 30px;
-  }
-  .regist__btn img {
-    width: 90px;
-    height: 90px;
+    padding: 28px 50px 28px 50px;
   }
   .regist__btn label {
     font-size: 32px;
@@ -1348,7 +1365,7 @@ footer {
   }
   .regist__btn {
     max-width: 720px;
-    padding: 24px 50px 24px 30px;
+    padding: 24px 50px 24px 50px;
   }
   .regist__btn label {
     font-size: 30px;
@@ -1384,8 +1401,8 @@ footer {
   .promo__img-wrap {
     margin-left: 0;
   }
-  .info-row__column1:before {
-    bottom: -40%;
+  .invitation__info-row .info-row__column1:before {
+    bottom: -58%;
     left: 55%;
   }
 
@@ -1533,6 +1550,14 @@ footer {
   }
   .invitation hr {
     margin: 80px auto;
+  }
+  .info-row__paragraph {
+    font-size: 26px;
+  }
+  .invitation__info-row .info-row__column1:before {
+    transform: scale(.6);
+    bottom: -65%;
+    left: 50%;
   }
 
   .inspiration {
@@ -1743,13 +1768,8 @@ footer {
     font-size: 24px;
   }
   .regist__btn {
-    border-radius: 28px;
     max-width: 550px;
-    padding: 20px 50px 20px 20px;
-  }
-  .regist__btn img {
-    width: 60px;
-    height: 60px;
+    padding: 20px 50px 20px 50px;
   }
   .regist__btn label {
     font-size: 23px;
@@ -1771,7 +1791,7 @@ footer {
     transform: scale(.7);
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.5px) {
   section {
     padding: 110px 70px 110px 70px;
   }
@@ -1780,7 +1800,7 @@ footer {
     padding-left: 0;
   }
   .header__menu li a, .header__btns-wrap .btns-wrap__btn {
-    font-size: 17px;
+    font-size: 16.5px;
   }
   .header__btns-wrap {
     column-gap: 20px;
@@ -1864,8 +1884,11 @@ footer {
   .info-row__title h1 {
     font-size: 43px;
   }
+  .info-row__paragraph {
+    font-size: 27px;
+  }
   .invitation .invitation__info-row .info-row__column1:before {
-    transform: scale(0.6);
+    transform: scale(0.5);
     bottom: -55%;
     left: 47%;
   }
@@ -2033,13 +2056,9 @@ footer {
     font-size: 20px;
   }
   .regist__btn {
-    border-radius: 22px;
     max-width: 490px;
-    padding: 15px 40px 15px 20px;
-  }
-  .regist__btn img {
-    width: 54px;
-    height: 54px;
+    padding: 15px 40px 15px 40px;
+    border-radius: 20px;
   }
   .regist__btn label {
     font-size: 20px;
@@ -2080,7 +2099,7 @@ footer {
     transform: scale(.5);
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991.5px) {
   .promo, .programm {
     padding-right: 80px;
   }
@@ -2115,6 +2134,15 @@ footer {
   }
   .promo__pills {
     margin-top: 0;
+  }
+  .promo__pills .pill1 {
+    padding: 11px 40px 9px 40px;
+  }
+  .promo__pills .pill2  {
+    padding: 13px 40px 13px 40px;
+  } 
+  .promo__pills .pill3 {
+    padding: 15px 40px 13px 40px;
   }
   .promo__img-wrap {
     transform: scale(.7);
@@ -2153,9 +2181,7 @@ footer {
     font-size: 20px;
   }
   body .invitation .invitation__info-row .info-row__column1:before {
-    transform: rotate(-10deg) scale(0.4);
-    bottom: -65%;
-    left: 40%;
+    display: none;
   } 
 
   .inspiration__inspiration-text-row {
@@ -2311,21 +2337,13 @@ footer {
   }
   .community__community-row {
     margin-top: 56px;
+    row-gap: 0;
   }
   .community-row__img {
-    transform: scale(.6);
+    display: none;
   }
-  .community-row__img1 {
-    bottom: -56px;
-    left: -60px;
-  }
-  .community-row__img3 {
-    top: -30px;
-    right: -30px;
-  }
-  .community-row__img4 {
-    top: -55px;
-    left: -60px;
+  .community-row__community-info:not(:first-child) {
+    margin-top: 24px;
   }
 
   .bonds__bonds-body {
@@ -2376,7 +2394,7 @@ footer {
   .regist__btn {
     border-radius: 14px;
     max-width: 430px;
-    padding: 12px 30px 12px 10px;
+    padding: 12px 30px 12px 30px;
   }
   .regist__btn label {
     font-size: 18px;
@@ -2413,7 +2431,7 @@ footer {
     transform: scale(.5);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.5px) {
   .header {
     padding: 5px 16px 5px 80px;
   }
@@ -2433,6 +2451,9 @@ footer {
   .promo__titles .title2 span::after {
     bottom: -20px;
     height: 15px;
+  }
+  .promo__pills .pill4 {
+    padding: 15px 41px 11px 38px;
   }
   .promo__img-wrap {
     transform: scale(.6);
@@ -2485,9 +2506,6 @@ footer {
   .info-row__title h1 {
     font-size: 37px;
   }
-  html body .invitation .invitation__info-row .info-row__column1:before {
-    display: none;
-  }
 
   .inspiration {
     padding: 60px 60px 50px 60px;
@@ -2534,9 +2552,12 @@ footer {
     margin: 25px auto;
   }
   .slider-wrap__testimonial {
-    height: 228px;
+    height: 220px;
     padding: 24px 35px;
   }
+  .testimonial__testimonial-body1 p {
+    line-height: 104%;
+}
   .testimonial__testimonial-body {
     margin-top: 7px;
   }
@@ -2553,7 +2574,7 @@ footer {
   }
   .information__menu li:nth-of-type(1) {
     margin-bottom: 10px;
-}
+  }
   .information h1 {
     font-size: 28px !important;
   }
@@ -2639,26 +2660,9 @@ footer {
   }
   .community__community-row {
     margin-top: 40px;
-    row-gap: 15px;
   }
-  .community-row__img1 {
-    transform: rotate(35deg) scale(.45);
-    bottom: -16px;
-    left: -100px;
-  }
-  .community-row__img2 {
-    transform: rotate(-15deg) scale(.45);
-    right: -55px;
-  }
-  .community-row__img3 {
-    transform: rotate(15deg) scale(.45);
-    top: -30px;
-    right: -60px;
-  }
-  .community-row__img4 {
-    transform: rotate(-5deg) scale(.45);
-    top: -45px;
-    left: -80px;
+  .community-row__community-info:not(:first-child) {
+    margin-top: 18px;
   }
 
   .bonds {
@@ -2723,10 +2727,6 @@ footer {
   .regist__btn {
     max-width: 400px;
   }
-  .regist__btn img {
-    width: 40px;
-    height: 40px;
-  }
   .regist__btn label {
     font-size: 17px;
   }
@@ -2751,7 +2751,7 @@ footer {
     margin-top: 0px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575.5px) {
   .promo__img-wrap:after {
     display: none;
   }
@@ -2765,13 +2765,16 @@ footer {
     padding: 10px 25px 7px 25px;
   }
   .promo__pills .pill2  {
-    padding: 10px 25px 11px 25px;
+    padding: 12px 25px 11px 25px;
   } 
   .promo__pills .pill3 {
     padding: 8px 30px 7px 30px;
   }
   .promo__pills .pill4 {
     padding: 11px 30px 9px 30px;
+  }
+  .promo__pills .pill5 {
+    padding: 17.5px 31px 15px 31px;
   }
   .promo__btn {
     width: 90%;
@@ -2804,6 +2807,10 @@ footer {
   }
   .mobile-adapt__date label span {
     bottom: 7px;
+  }
+
+  .info-row__paragraph {
+    margin-top: 10px;
   }
 
   .inspiration__inspiration-text-row {
@@ -2918,25 +2925,8 @@ footer {
   .community__community-row {
     margin-top: 34px;
   }
-  .community-row__img1 {
-    transform: rotate(35deg) scale(.3);
-    bottom: -46px;
-    left: -120px;
-  }
-  .community-row__img2 {
-    transform: rotate(-15deg) scale(.3);
-    bottom: -60px;
-    right: -85px;
-  }
-  .community-row__img3 {
-    transform: rotate(25deg) scale(.3);
-    top: -40px;
-    right: -100px;
-  }
-  .community-row__img4 {
-    transform: rotate(-5deg) scale(.3);
-    top: -45px;
-    left: -110px;
+  .community-row__community-info:not(:first-child) {
+    margin-top: 12px;
   }
 
   .bonds {
@@ -2971,6 +2961,7 @@ footer {
   }
   .regist__btn {
     max-width: 370px;
+    border: 3px solid #fff;
   }
   .regist__btn label {
     font-size: 16px;
@@ -3049,6 +3040,14 @@ footer {
   .promo__mobile-adapt .promo__marquee label {
     font-size: 25px;
   }
+  .marquee {
+    max-width: 100%;
+    height: 46px;
+  }
+  .content {
+    font-size: 30px;
+  }
+
   .main-title,
   .accordion-button::after {
     font-size: 24px !important;
@@ -3188,23 +3187,6 @@ footer {
   .community__community-row {
     margin-top: 24px;
   }
-  .community-row__img1 {
-    bottom: -46px;
-    left: -130px;
-  }
-  .community-row__img2 {
-    bottom: -60px;
-    right: -85px;
-  }
-  .community-row__img3 {
-    top: -60px;
-    right: -110px;
-  }
-  .community-row__img4 {
-    transform: rotate(-15deg) scale(.3);
-    top: -65px;
-    left: -115px;
-  }
 
   .bonds__bonds-body {
     padding: 40px 30px 20px 30px;
@@ -3231,11 +3213,7 @@ footer {
   }
   .regist__btn {
     max-width: 100%;
-    padding: 18px 20px;
-    justify-content: center !important;
-  }
-  .regist__btn img {
-    display: none;
+    padding: 16px 20px;
   }
   .regist__btn label {
     font-size: 15px;
@@ -3249,11 +3227,17 @@ footer {
   }
 }
 @media screen and (max-width: 400px) {
+  .promo__mobile-adapt {
+    row-gap: 30px;
+  }
   .mobile-adapt__date label {
     max-width: 200px;
   }
   .promo__btn label {
     font-size: 17px;
+  }
+  .promo__img-wrap {
+    margin-top: -110px;
   }
   .programm__path {
     margin-top: 12px;
@@ -3279,6 +3263,13 @@ footer {
   }
   .ellipse-wrap__ellipse span {
     font-size: 30px;
+  }
+  .marquee {
+    height: 36px;
+    margin-top: -70px;
+  }
+  .content {
+    font-size: 24px;
   }
 
   .inspiration__inspiration-text-row {
@@ -3364,15 +3355,6 @@ footer {
   .community-header__title {
     margin: -65px 0 0px 0;
   }
-  .community__community-row {
-    row-gap: 10px;
-  }
-  .community-row__community-info3 {
-    margin: 10px 0 4px 0;
-  }
-  .community-row__community-info5 {
-    margin-top: 10px;
-  }
   .community-header__paragraph p,
   .community-info__title,
   .community-info__paragraph {
@@ -3384,8 +3366,8 @@ footer {
   .community-row__img {
     display: none;
   }
-  .community-row__community-info {
-    width: 100%;
+  .community-row__community-info:not(:first-child) {
+    margin-top: 10px;
   }
 
   .bonds__bonds-body {

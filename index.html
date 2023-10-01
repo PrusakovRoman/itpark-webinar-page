@@ -8,6 +8,8 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="fonts/zona pro/stylesheet.css">
 
   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
@@ -18,6 +20,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header class="header">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
@@ -120,7 +123,11 @@
           <h1 class="title2 text-center text-lg-start">Получите реальные навыки <span>бесплатно!</span></h1>
         </div>
 
-        <marquee behavior="" direction="" class="promo__marquee overflow-hidden"><label>Бесплатный вебинар по разработке сайтов с нуля.</label></marquee>
+        <div class="marquee promo__marquee">
+          <div class="track">
+            <div class="content">&nbsp;Бесплатный вебинар по разработке сайтов с нуля. &nbsp;Бесплатный вебинар по разработке сайтов с нуля.</div>
+          </div>
+        </div>
 
         <div class="mobile-adapt__date text-center">
             <label class="">Октябрь 07 <span></span> 00:00</label>
@@ -160,10 +167,10 @@
         <h1 class="main-title">Приглашаем на серию практических вебинаров, где</h1>
       </div>
 
-      <div class="row invitation__cards-row justify-content-center">
+      <div class="row invitation__cards-row justify-content-center align-items-center">
         <div class="col-lg-5 col-12">
           <div class="row invitation__cards-subrow justify-content-around">
-            <div class="col-lg-12 col-md-5 col-12 invitation__card invitation__card1">
+            <div class="col-lg-12 col-md-5 col-12 invitation__card invitation__card1" data-aos="fade-right" data-aos-duration="1000">
               <div class="invitation__card-content">
                 <div class="card-content__svg">
                   <svg xmlns="http://www.w3.org/2000/svg" width="52" height="48" viewBox="0 0 52 48" fill="none">
@@ -175,7 +182,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-12 col-md-5 col-12 invitation__card invitation__card2">
+            <div class="col-lg-12 col-md-5 col-12 invitation__card invitation__card2" data-aos="fade-right" data-aos-duration="1000">
               <div class="invitation__card-content">
                 <div class="card-content__svg">
                   <svg xmlns="http://www.w3.org/2000/svg" width="52" height="48" viewBox="0 0 52 48" fill="none">
@@ -188,7 +195,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-11 col-12 invitation__card invitation__card3">
+        <div class="col-lg-6 col-md-11 col-12 invitation__card invitation__card3" data-aos="fade-left" data-aos-duration="1000">
           <div class="invitation__card-content">
             <div class="card-content__svg">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 82" fill="none">
@@ -201,18 +208,16 @@
         </div>
       </div>
       <hr>
-      <div class="row invitation__info-row justify-content-between flex-column flex-md-row align-items-center row-gap-4 row-gap-sm-5 row-gap-md-0">
+      <div class="row invitation__info-row justify-content-between flex-column flex-md-row align-items-center row-gap-4 row-gap-sm-4 row-gap-md-0">
         <div class="col-md-5 col-12 px-0 info-row__column1 position-relative">
           <div class="info-row__title">
             <h1><span>не верьте </span>нам на слово</h1>
           </div>
             <p class="info-row__paragraph mb-0">Давайте посмотрим, ЧТО вас ждет на наших вебинарах</p>
         </div>
-        <div class="col-md-6 col-12 px-0">
-          <div class="promo__video-wrap">
-            <video poster="" controls preload="metadata">
-              <source type="video/mp4" src="video/1.mp4">
-            </video>
+        <div class="col-md-6 col-12 px-0 ">
+          <div class="ratio ratio-16x9">
+            <!-- <iframe src="https://www.youtube.com/embed/WKdDlPntAZw" title="IT-ПАРК: Обучение | Разработка | События" allowfullscreen></iframe> -->
           </div>
         </div>
       </div>
@@ -243,7 +248,7 @@
           <p class="mb-0 text-center">Вот некоторые проекты, которые ученики реализовали после участия в наших вебинарах</p>
         </div>
         <div class="inspiration-projects-wrap__cards-row row row-gap-md-0 row-gap-3 row-gap-sm-4 justify-content-center justify-content-md-start">
-          <div class="col-md col-sm-8 col-10 pe-md-0 p-auto">
+          <div class="col-md col-sm-8 col-10 pe-md-0 p-auto" data-aos="fade-up" data-aos-duration="1000">
             <div class="card cards-row__card cards-row__card1">
               <div class="card__img">
                 <img src="gif/insp-card1.gif" alt="...">
@@ -254,7 +259,7 @@
             </div>
           </div>
 
-          <div class="col-md col-sm-8 col-10 px-md-0 p-auto">
+          <div class="col-md col-sm-8 col-10 px-md-0 p-auto" data-aos="fade-up" data-aos-duration="1000">
             <div class="card cards-row__card cards-row__card2">
               <div class="card__img">
                 <img src="gif/insp-card2.gif" alt="...">
@@ -265,7 +270,7 @@
             </div>
           </div>
 
-          <div class="col-md col-sm-8 col-10 ps-md-0 p-auto">
+          <div class="col-md col-sm-8 col-10 ps-md-0 p-auto" data-aos="fade-up" data-aos-duration="1000">
             <div class="card cards-row__card cards-row__card3">
               <div class="card__img">
                 <img src="gif/insp-card3.gif" alt="...">
@@ -288,7 +293,7 @@
       </div>
 
       <div class="comments__slider-wrap">
-        <div class="regular slider slider-wrap__slider">
+        <div class="regular slider slider-wrap__slider" data-aos="fade-up" data-aos-duration="900">
           <div class="slider-wrap__testimonial slider-wrap__testimonial1">
             <div class="testimonial__testimonial-name">
               <label for="">Владимир Коныш</label>
@@ -429,7 +434,7 @@
         </div>
       </div>
         <div class="programm__path d-flex flex-column mx-auto">
-          <div class="path__row path__row1 d-flex align-items-start align-items-lg-center flex-column flex-lg-row row-gap-2">
+          <div data-aos="fade-right" data-aos-duration="1200" class="path__row path__row1 d-flex align-items-start align-items-lg-center flex-column flex-lg-row row-gap-2">
               <div class="row__ellipse-wrap d-flex align-items-center">
                 <div class="ellipse-wrap__ellipse ellipse-wrap__ellipse1">
                   <span>1</span>
@@ -445,7 +450,7 @@
               </div>
           </div>
 
-          <div class="path__row path__row2 d-flex align-items-start align-items-lg-center flex-column flex-lg-row row-gap-2">
+          <div data-aos="fade-left" data-aos-duration="1200" class="path__row path__row2 d-flex align-items-start align-items-lg-center flex-column flex-lg-row row-gap-2">
             <div class="row__ellipse-wrap d-flex align-items-center">
               <div class="ellipse-wrap__ellipse ellipse-wrap__ellipse2">
                 <span>2</span>
@@ -461,7 +466,7 @@
             </div>
           </div>
 
-          <div class="path__row path__row3 d-flex align-items-start align-items-lg-center flex-column flex-lg-row row-gap-2">
+          <div data-aos="fade-right" data-aos-duration="1200" class="path__row path__row3 d-flex align-items-start align-items-lg-center flex-column flex-lg-row row-gap-2">
             <div class="row__ellipse-wrap d-flex align-items-center">
               <div class="ellipse-wrap__ellipse ellipse-wrap__ellipse3">
                 <span>3</span>
@@ -477,7 +482,7 @@
             </div>
           </div>
 
-          <div class="path__row path__row4 d-flex align-items-start align-items-lg-center flex-column flex-lg-row row-gap-2">
+          <div data-aos="fade-left" data-aos-duration="1200" class="path__row path__row4 d-flex align-items-start align-items-lg-center flex-column flex-lg-row row-gap-2">
             <div class="row__ellipse-wrap d-flex align-items-center">
               <div class="ellipse-wrap__ellipse ellipse-wrap__ellipse4">
                 <span>4</span>
@@ -493,7 +498,7 @@
             </div>
           </div>
 
-          <div class="path__row path__row5 d-flex align-items-start align-items-lg-center flex-column flex-lg-row row-gap-2">
+          <div data-aos="fade-right" data-aos-duration="1200" class="path__row path__row5 d-flex align-items-start align-items-lg-center flex-column flex-lg-row row-gap-2">
             <div class="row__ellipse-wrap d-flex align-items-center">
               <div class="ellipse-wrap__ellipse ellipse-wrap__ellipse5">
                 <span>5</span>
@@ -532,41 +537,41 @@
       </div>
 
       <div class="community__community-row row justify-content-between">
-        <div class="col-xxl-5 col-lg-6 col-sm-7 col-9 community-row__community-info">
+        <div class="col-xxl-5 col-lg-6 col-12 community-row__community-info">
           <label for="" class="community-info__title">Обмениваться опытом:</label>
           <p class="mb-0 community-info__paragraph">Поделитесь своими успехами, вопросами и идеями с другими участниками, которые, как и вы, стремятся освоить мир веб-разработки.</p>
         </div>
-        <div class="col-xxl-7 col-lg-6 col-sm-5 col-3 position-relative">
+        <div class="col-xxl-7 col-6 position-relative">
           <img src="img/commnt-arrow1.svg" class="community-row__img community-row__img1" alt="">
         </div>
 
-        <div class="col-xxl-7 col-lg-6 col-sm-5 col-3 position-relative">
+        <div class="col-xxl-7 col-6 position-relative">
           <img src="img/commnt-arrow2.svg" class="community-row__img community-row__img2" alt="">
         </div>
-        <div class="col-xxl-5 col-lg-6 col-sm-7 col-9 community-row__community-info">
+        <div class="col-xxl-5 col-lg-6 col-12 community-row__community-info">
           <label for="" class="community-info__title">Получать поддержку:</label>
           <p class="mb-0 community-info__paragraph">Наши опытные инструкторы и более опытные участники всегда готовы помочь вам в разрешении любых технических сложностей или вопросов, с которыми вы столкнетесь на своем пути.</p>
         </div>
 
-        <div class="col-lg-6 col-sm-7 col-9 community-row__community-info community-row__community-info3">
+        <div class="col-lg-6 col-12 community-row__community-info community-row__community-info3">
           <label for="" class="community-info__title">Учиться вместе: </label>
           <p class="mb-0 community-info__paragraph">Мы организуем регулярные онлайн-сессии обучения, мастер-классы и групповые проекты, чтобы вы могли продолжать углублять свои знания и навыки.</p>
         </div>
-        <div class="col-xxl-7 col-lg-6 col-sm-5 col-3 position-relative"></div>
+        <div class="col-xxl-7 col-6 position-relative"></div>
 
-        <div class="col-xxl-7 col-lg-6 col-sm-5 col-3 position-relative">
+        <div class="col-xxl-7 col-6 position-relative">
           <img src="img/commnt-arrow3.svg" class="community-row__img community-row__img3" alt="">
         </div>
-        <div class="col-xxl-5 col-lg-6 col-sm-7 col-9 community-row__community-info">
+        <div class="col-xxl-5 col-lg-6 col-12 community-row__community-info">
           <label for="" class="community-info__title">Получать полезности и учебные материалы:</label>
           <p class="mb-0 community-info__paragraph">Вы получите доступ к дополнительным учебным материалам, пошаговым алгоритмам и инструкциям,что пошагово нужно делать, чтобы освоить профессию.</p>
         </div>
 
-        <div class="col-xxl-5 col-lg-6 col-sm-7 col-9 community-row__community-info community-row__community-info5">
+        <div class="col-xxl-5 col-lg-6 col-12 community-row__community-info community-row__community-info5">
           <label for="" class="community-info__title">Информироваться о событиях:</label>
           <p class="mb-0 community-info__paragraph">Будьте в курсе всех предстоящих мероприятий, включая дополнительные вебинары, конкурсы и специальные мероприятия.</p>
         </div>
-        <div class="col-xxl-7 col-lg-6 col-sm-5 col-3 position-relative">
+        <div class="col-xxl-7 col-6 position-relative">
           <img src="img/commnt-arrow4.svg" class="community-row__img community-row__img4" alt="">
         </div>
       </div>
@@ -578,7 +583,7 @@
       <div class="container bonds__container">
         <div class="bonds__bonds-body">
           <div class="bonds-body__text">
-            <p class="mb-0">Создавайте связи, учите и развивайтесь вместе с нами! Наше сообщество - это место, где вы найдете вдохновение и поддержку для достижения ваших целей в сфере веб-разработки.</p>
+            <p class="mb-0">Создавайте связи, учитесь и развивайтесь вместе с нами! Наше сообщество - это место, где вы найдете вдохновение и поддержку для достижения ваших целей в сфере веб-разработки.</p>
           </div>
         </div>
       </div>
@@ -713,13 +718,12 @@
           <h1>Готовы начать свой увлекательный путь в мире веб-разработки?</h1>
         </div>
         <div class="regist__paragraph">
-          <p class="mb-0">Чтобы записаться на вебинар, переходи в Телеграм по кнопке ниже👇</p>
+          <p class="mb-0">Нажмите кнопку ниже, чтобы зарегистрироваться на бесплатный вебинар и получить доступ к чату участников и материалам для подготовки к вебинару</p>
         </div>
       </div>
       <div class="regist__btn-wrap">
-        <a href="" class="regist__btn d-flex justify-content-between align-items-center column-gap-sm-3 column-gap2">
-          <img src="img/tg-btn-icon.svg" alt="">
-          <label for="" class="text-center">Зарегистрироваться на вебинар</label>
+        <a href="" class="regist__btn d-flex justify-content-center align-items-center">
+          <label for="" class="text-center">Регистрация</label>
         </a>
       </div>
       
@@ -750,15 +754,36 @@
   </footer>
 
 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 
-  <script src="script.js"></script>
+  <script type="text/javascript">
+    AOS.init();
+
+    $(document).on('ready', function() {
+      $(".slider-wrap__slider").slick({
+      dots: false,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      speed: 500,
+      responsive: [
+        {
+          breakpoint: 576, 
+            settings: {
+              arrows: false,
+              dots: true
+            }
+          }
+        ]
+      });
+    });
+  </script>
 </body>
 </html>
