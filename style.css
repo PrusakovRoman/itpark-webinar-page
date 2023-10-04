@@ -1,4 +1,5 @@
-body, * {
+body,
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -10,12 +11,12 @@ body {
   overflow-x: hidden;
 }
 @font-face {
-  font-family: 'Moscow sans';
-  src: url(/fonts/moscowSans/moscowsansregular.ttf);
+  font-family: "Moscow sans";
+  src: url(./fonts/moscowSans/moscowsansregular.ttf);
 }
 header {
   padding: 11px 16px 11px 80px;
-  background-color: #5531AB;
+  background-color: #5531ab;
   position: sticky;
   top: 0;
   left: 0;
@@ -39,13 +40,13 @@ section {
 }
 .header__menu li a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   font-family: Zona Pro;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  transition: .15s;
+  transition: 0.15s;
   border-bottom-width: 3px;
   border-bottom-color: transparent;
   border-bottom-style: solid;
@@ -61,16 +62,16 @@ section {
 .header__btns-wrap .btns-wrap__btn {
   border-radius: 11px;
   color: #fff;
-  font-family: 'Moscow sans', arial;
+  font-family: "Moscow sans", arial;
   font-size: 24px;
-  transition: .2s;
+  transition: 0.2s;
   padding: 6px 16px 6px 16px;
   text-decoration: none;
   display: inline-block;
 }
 .btns-wrap__question-btn {
   background-color: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   font-weight: 300;
 }
 .btns-wrap__question-btn:hover {
@@ -79,12 +80,12 @@ section {
   box-shadow: 0px 0px 2px #fff;
 }
 .btns-wrap__regist-btn {
-  background-color: #DB00FF;
-  border: 1px solid #DB00FF;
+  background-color: #db00ff;
+  border: 1px solid #db00ff;
   font-weight: 900;
 }
 .btns-wrap__regist-btn:hover {
-  box-shadow: 0px 0px 10px #DB00FF;
+  box-shadow: 0px 0px 10px #db00ff;
 }
 .header__menu-icon {
   border: none !important;
@@ -100,10 +101,12 @@ section {
   padding-right: 36px;
   padding-left: 80px;
 }
-.promo__col-wrap1, .promo__data-wrap {
+.promo__col-wrap1,
+.promo__data-wrap {
   row-gap: 130px;
 }
-.promo__titles .title1, .promo__titles .title2 {
+.promo__titles .title1,
+.promo__titles .title2 {
   font-family: Zona Pro;
   font-size: 76px;
   font-weight: 900;
@@ -117,12 +120,12 @@ section {
   position: relative;
 }
 .promo__titles .title2 span::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -25px;
   height: 26px;
-  background-color: #5531AB;
+  background-color: #5531ab;
   width: 105%;
 }
 .promo__date h3 {
@@ -152,10 +155,10 @@ section {
 }
 .promo__btn {
   border-radius: 25px;
-  background-color: #5531AB;
+  background-color: #5531ab;
   padding: 38px 80px;
   width: 90%;
-  transition: .2s;
+  transition: 0.2s;
   border: none;
 }
 .promo__btn label {
@@ -165,14 +168,14 @@ section {
   font-size: 48px;
   font-style: normal;
   line-height: normal;
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 .promo__btn:hover {
-  box-shadow: 0px 0px 7px #5531AB;
+  box-shadow: 0px 0px 7px #5531ab;
 }
 .promo__img-wrap:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 20%;
   left: 40%;
@@ -181,7 +184,7 @@ section {
   height: 480.498px;
   flex-shrink: 0;
   z-index: -2;
-  background-color: #5531AB;
+  background-color: #5531ab;
   filter: blur(148px);
   border-radius: 50%;
 }
@@ -208,16 +211,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .2s;
+  transition: 0.2s;
 }
 .promo__pills .pill:hover {
   transform: scale(1.05);
 }
-.promo__pills .pill1, 
+.promo__pills .pill1,
 .promo__pills .pill5 {
-  background-color: #5531AB;
+  background-color: #5531ab;
 }
-.promo__pills .pill2, 
+.promo__pills .pill2,
 .promo__pills .pill4 {
   background-color: #fff;
   border: 3px solid #000;
@@ -228,9 +231,9 @@ section {
 .promo__pills .pill1 {
   padding: 14px 63px 9px 63px;
 }
-.promo__pills .pill2  {
+.promo__pills .pill2 {
   padding: 12px 63px 13px 63px;
-} 
+}
 .promo__pills .pill3 {
   padding: 16px 51px 13px 51px;
 }
@@ -304,7 +307,7 @@ section {
   font-family: Zona Pro;
 }
 .invitation {
-  background-color: #EFF4F7;
+  background-color: #eff4f7;
 }
 .invitation__title {
   margin-bottom: 130px;
@@ -323,10 +326,10 @@ section {
   background-color: #493990;
 }
 .invitation__card2 {
-  background-color: #FFF;
+  background-color: #fff;
 }
 .invitation__card3 {
-  background-image: linear-gradient(180deg, #6F5EBB 0%, #A175B0 100%);
+  background-image: linear-gradient(180deg, #6f5ebb 0%, #a175b0 100%);
 }
 .invitation__card1 .card-content__svg,
 .invitation__card2 .card-content__svg {
@@ -345,7 +348,7 @@ section {
   letter-spacing: 1.6;
 }
 .invitation__card1 .card-content__paragraph {
-  color: #FFF;
+  color: #fff;
   font-size: 40px;
 }
 .invitation__card2 .card-content__paragraph {
@@ -396,7 +399,7 @@ section {
 .inspiration {
   background-color: #493990;
   padding: 184px 64px 130px 84px;
-  color: #FFF;
+  color: #fff;
 }
 .inspiration__inspiration-text-row {
   margin-bottom: 200px;
@@ -424,7 +427,7 @@ section {
   margin-bottom: 60px;
 }
 .inspiration-text-row__menu ul li:before {
-  content: '';
+  content: "";
   width: 9px;
   height: 86%;
   background-color: #fff;
@@ -473,7 +476,7 @@ section {
 }
 
 .comments {
-  background-color: #F1DBFF;
+  background-color: #f1dbff;
   padding: 140px 37px;
 }
 .slider-wrap__slider {
@@ -484,9 +487,9 @@ section {
   margin: 0px 20px;
   position: relative;
   overflow: hidden;
-  transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
-  opacity: .2;
+  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
 }
 .slick-prev,
 .slick-next {
@@ -510,7 +513,7 @@ section {
   content: url(img/slick-next-group.svg);
 }
 .slick-active {
-  opacity: .5;
+  opacity: 0.5;
 }
 .slick-current {
   opacity: 1;
@@ -574,7 +577,7 @@ section {
   font-size: 55px;
 }
 .information__menu li:before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #000;
   width: 20px;
@@ -615,7 +618,7 @@ section {
 }
 
 .programm {
-  background-color: #EFF4F7;
+  background-color: #eff4f7;
 }
 .header__img-wrap {
   margin: 0 auto;
@@ -631,7 +634,7 @@ section {
   margin: 0 auto;
 }
 .header__title h1 span {
-  color: #5531AB;
+  color: #5531ab;
 }
 .programm__path {
   margin-top: 75px;
@@ -683,19 +686,19 @@ section {
   margin-left: auto;
 }
 .path__row1 {
-  background-color: #EDCEF5;
+  background-color: #edcef5;
 }
 .path__row2 {
-  background-color: #D7A7E3;
+  background-color: #d7a7e3;
 }
 .path__row3 {
-  background-color: #AD67BF;
+  background-color: #ad67bf;
 }
 .path__row4 {
-  background-color: #863F9D;
+  background-color: #863f9d;
 }
 .path__row5 {
-  background-color: #603B98;
+  background-color: #603b98;
 }
 .ellipse-wrap__ellipse1 span,
 .ellipse-wrap__ellipse2 span {
@@ -717,10 +720,10 @@ section {
   line-height: 126%;
 }
 .row__paragraph1 p span {
-  color: #603B98;
+  color: #603b98;
 }
 .row__paragraph2 p span {
-  color: #603B98;
+  color: #603b98;
   line-height: 160.5%;
 }
 .row__paragraph3 p {
@@ -730,7 +733,7 @@ section {
   color: #000;
 }
 .row__paragraph4 p {
-  color: #F9C9FA;
+  color: #f9c9fa;
 }
 .row__paragraph4 p span {
   color: #fff;
@@ -799,7 +802,7 @@ section {
 }
 
 .bonds {
-  background-color: #7157A4;
+  background-color: #7157a4;
   padding: 0;
 }
 .bonds__content {
@@ -815,7 +818,7 @@ section {
   padding: 70px 60px 70px 0px;
 }
 .bonds-body__text p {
-  color: #FFF;
+  color: #fff;
   font-family: Zona Pro;
   font-size: 48px;
   font-weight: 900;
@@ -827,7 +830,7 @@ section {
 }
 
 .faqs {
-  background-color: #EFF4F7;
+  background-color: #eff4f7;
   padding: 130px 130px 220px 115px;
 }
 .faqs__title {
@@ -835,13 +838,13 @@ section {
   margin-bottom: 66px;
 }
 .faqs__title h1 span {
-  color: #5531AB;
+  color: #5531ab;
 }
 .faqs__accordion,
 .faqs__accordion-header,
 .faqs__accordion-button,
 .faqs__accordion-body {
-  background-color: #EFF4F7;
+  background-color: #eff4f7;
 }
 .faqs__accordion-header {
   border-top: 4px solid #000;
@@ -917,7 +920,7 @@ section {
 }
 
 .regist {
-  background-color: #5531AB;
+  background-color: #5531ab;
   padding: 105px 140px 105px 120px;
   color: #fff;
 }
@@ -946,7 +949,7 @@ section {
   background-color: transparent;
   border: 4px solid #fff;
   max-width: 810px;
-  transition: .2s;
+  transition: 0.2s;
 }
 .regist__btn:hover {
   box-shadow: 0 0 2px #fff;
@@ -1023,8 +1026,8 @@ footer {
   }
 }
 @keyframes marquee {
-  0% { 
-    transform: translateX(0); 
+  0% {
+    transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
@@ -1039,7 +1042,7 @@ footer {
     position: relative;
     flex: 0 0 50%;
     transform: translateX(-100%);
-  } 
+  }
   .bonds__image img {
     position: absolute;
     top: 0;
@@ -1073,7 +1076,8 @@ footer {
   .accordion-button::after {
     font-size: 79px !important;
   }
-  .promo__col-wrap1, .promo__data-wrap {
+  .promo__col-wrap1,
+  .promo__data-wrap {
     row-gap: 100px;
   }
   .inspiration__inspiration-text-row {
@@ -1091,7 +1095,7 @@ footer {
   }
   .testimonial__testimonial-body p {
     font-size: 34px;
-  } 
+  }
 
   .information__subrow:nth-of-type(1) {
     row-gap: 55px;
@@ -1117,7 +1121,7 @@ footer {
   }
   .information__date h1 {
     row-gap: 35px;
-  } 
+  }
   .information__date h1 span {
     width: 170px;
     height: 6px;
@@ -1163,16 +1167,20 @@ footer {
   }
 }
 @media screen and (max-width: 1620px) {
-  .promo, .programm, .information {
+  .promo,
+  .programm,
+  .information {
     padding-top: 120px;
   }
   .information {
     padding-bottom: 120px;
   }
-  .promo__titles .title1, .promo__titles .title2 {
+  .promo__titles .title1,
+  .promo__titles .title2 {
     font-size: 55px;
   }
-  .promo__date h3, .promo__date p {
+  .promo__date h3,
+  .promo__date p {
     font-size: 52px;
   }
   .promo__date h3 {
@@ -1185,11 +1193,11 @@ footer {
     font-size: 38px;
   }
   .promo__img-wrap {
-    transform: scale(.9);
+    transform: scale(0.9);
     margin-left: 10px;
   }
   .promo__img-wrap:after {
-    transform: scale(.9);
+    transform: scale(0.9);
     top: -20%;
     left: 0;
   }
@@ -1211,7 +1219,7 @@ footer {
   .invitation__card2 .card-content__paragraph {
     font-size: 30px;
   }
-  .invitation__card3 .card-content__paragraph, 
+  .invitation__card3 .card-content__paragraph,
   .footer__contacts h3 {
     font-size: 38px;
   }
@@ -1265,7 +1273,7 @@ footer {
   }
   .testimonial__testimonial-body p {
     font-size: 30px;
-  } 
+  }
 
   .information__date h1 span {
     width: 130px;
@@ -1275,7 +1283,7 @@ footer {
     margin-top: 10px;
   }
   .header__img-wrap {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
   .programm__path {
     margin-top: 60px;
@@ -1302,7 +1310,7 @@ footer {
     padding: 120px 70px 120px 80px;
   }
   .community-header__img {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
   .community-header__title {
     margin: 48px 0 34px 0;
@@ -1316,7 +1324,7 @@ footer {
     margin-top: 100px;
   }
   .community-row__img {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
 
   .bonds-body__text p {
@@ -1355,7 +1363,7 @@ footer {
     font-size: 30px;
   }
 
-  .footer__paragraph1, 
+  .footer__paragraph1,
   .footer__paragraph2,
   .footer__contacts label,
   .faqs__accordion-button label {
@@ -1368,7 +1376,7 @@ footer {
     margin-top: 45px;
   }
   .footer__socials img {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
 }
 @media screen and (max-width: 1597px) {
@@ -1419,7 +1427,7 @@ footer {
   }
   .testimonial__testimonial-body p {
     font-size: 26px;
-  } 
+  }
 
   .information__place {
     row-gap: 50px;
@@ -1449,29 +1457,34 @@ footer {
     margin-right: 38px;
   }
   .row__pic {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
 }
 @media screen and (max-width: 1400px) {
   .header__menu {
     padding-left: 12px;
   }
-  .header__menu li a, .header__btns-wrap .btns-wrap__btn {
+  .header__menu li a,
+  .header__btns-wrap .btns-wrap__btn {
     font-size: 20px;
   }
   .header__btns-wrap {
     column-gap: 30px;
   }
-  .promo, .programm {
+  .promo,
+  .programm {
     padding-top: 100px;
   }
-  .promo__col-wrap1, .promo__data-wrap {
+  .promo__col-wrap1,
+  .promo__data-wrap {
     row-gap: 80px;
   }
-  .promo__titles .title1, .promo__titles .title2 {
+  .promo__titles .title1,
+  .promo__titles .title2 {
     font-size: 50px;
   }
-  .promo__date h3, .promo__date p {
+  .promo__date h3,
+  .promo__date p {
     font-size: 47px;
   }
   .promo__date h3 {
@@ -1487,7 +1500,7 @@ footer {
     width: 500px;
   }
   .promo__img-wrap {
-    transform: scale(.69);
+    transform: scale(0.69);
     margin-top: -70px;
     margin-left: -5px;
   }
@@ -1500,9 +1513,9 @@ footer {
   .promo__pills .pill1 {
     padding: 13px 53px 9px 53px;
   }
-  .promo__pills .pill2  {
+  .promo__pills .pill2 {
     padding: 12px 53px 13px 53px;
-  } 
+  }
   .promo__pills .pill3 {
     padding: 16px 41px 13px 41px;
   }
@@ -1528,7 +1541,7 @@ footer {
     font-size: 55px;
   }
   .card-content__svg svg {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
   .invitation hr {
     margin: 80px auto;
@@ -1537,7 +1550,7 @@ footer {
     font-size: 26px;
   }
   .invitation__info-row .info-row__column1:before {
-    transform: scale(.6);
+    transform: scale(0.6);
     bottom: -65%;
     left: 50%;
   }
@@ -1584,7 +1597,7 @@ footer {
   }
   .slick-prev,
   .slick-next {
-    transform: scale(.5);
+    transform: scale(0.5);
     top: 33%;
   }
   .slider-wrap__testimonial {
@@ -1599,7 +1612,7 @@ footer {
   }
   .testimonial__testimonial-body p {
     font-size: 23px;
-  } 
+  }
 
   .information__label {
     font-size: 30px;
@@ -1629,14 +1642,14 @@ footer {
   }
   .information__date h1 {
     row-gap: 25px;
-  } 
+  }
   .information__date h1 span {
     width: 120px;
   }
   .information__place {
     row-gap: 35px;
   }
-  
+
   .programm__path {
     row-gap: 25px;
     margin-top: 45px;
@@ -1663,7 +1676,7 @@ footer {
   }
   .row__pic {
     margin-right: -20px;
-    transform: scale(.7);
+    transform: scale(0.7);
   }
   .path__row1 .row__pic {
     margin-right: -35px;
@@ -1679,7 +1692,7 @@ footer {
     padding: 80px 60px 100px 70px;
   }
   .community-header__img {
-    transform: scale(.7);
+    transform: scale(0.7);
   }
   .community-header__title {
     margin: 18px 0 24px 0;
@@ -1693,7 +1706,7 @@ footer {
     margin-top: 76px;
   }
   .community-row__img {
-    transform: scale(.7);
+    transform: scale(0.7);
   }
   .community-row__img1 {
     bottom: 0px;
@@ -1732,8 +1745,8 @@ footer {
     font-size: 23px;
   }
   .faqs__accordion-body9 label ul {
-    margin-top: .8rem;
-    margin-bottom: .8rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
   }
 
   .regist {
@@ -1757,7 +1770,7 @@ footer {
     font-size: 23px;
   }
 
-  .footer__paragraph1, 
+  .footer__paragraph1,
   .footer__paragraph2,
   .faqs__accordion-header label {
     font-size: 25px;
@@ -1770,7 +1783,7 @@ footer {
     column-gap: 16px;
   }
   .footer__socials img {
-    transform: scale(.7);
+    transform: scale(0.7);
   }
 }
 @media screen and (max-width: 1199.5px) {
@@ -1781,7 +1794,8 @@ footer {
     column-gap: 32px;
     padding-left: 0;
   }
-  .header__menu li a, .header__btns-wrap .btns-wrap__btn {
+  .header__menu li a,
+  .header__btns-wrap .btns-wrap__btn {
     font-size: 16.5px;
   }
   .header__btns-wrap {
@@ -1790,13 +1804,16 @@ footer {
   .header__btns-wrap .btns-wrap__btn {
     padding: 4px 12px 4px 12px;
   }
-  .promo__titles .title1, .promo__titles .title2 {
+  .promo__titles .title1,
+  .promo__titles .title2 {
     font-size: 45px;
   }
-  .promo__col-wrap1, .promo__data-wrap {
+  .promo__col-wrap1,
+  .promo__data-wrap {
     row-gap: 65px;
   }
-  .promo__date h3, .promo__date p {
+  .promo__date h3,
+  .promo__date p {
     font-size: 40px;
   }
   .promo__date h3 {
@@ -1821,11 +1838,11 @@ footer {
   .promo__pills .pill1 {
     padding: 13px 43px 9px 43px;
   }
-  .promo__pills .pill2  {
+  .promo__pills .pill2 {
     padding: 12px 43px 13px 43px;
-  } 
+  }
   .promo__img-wrap {
-    transform: scale(.55);
+    transform: scale(0.55);
     margin-top: -100px;
     margin-left: -55px;
   }
@@ -1851,7 +1868,7 @@ footer {
     margin-bottom: 25px;
   }
   .card-content__svg svg {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
   .invitation__card1 .card-content__paragraph,
   .invitation__card2 .card-content__paragraph {
@@ -1931,7 +1948,7 @@ footer {
   }
   .testimonial__testimonial-body p {
     font-size: 20px;
-  } 
+  }
 
   .information {
     padding: 100px 70px 100px 70px;
@@ -1947,7 +1964,7 @@ footer {
   }
   .information__date h1 {
     row-gap: 20px;
-  } 
+  }
   .information__date h1 span {
     width: 115px;
   }
@@ -1962,7 +1979,7 @@ footer {
     margin-top: 0px;
   }
   .header__img-wrap {
-    transform: scale(.75);
+    transform: scale(0.75);
   }
   .path__row {
     padding: 0px 25px;
@@ -1986,7 +2003,7 @@ footer {
   }
   .row__pic {
     margin-right: -30px;
-    transform: scale(.55);
+    transform: scale(0.55);
   }
   .path__row1 .row__pic {
     margin-right: -45px;
@@ -2049,7 +2066,7 @@ footer {
   footer {
     padding: 55px 70px 100px 70px;
   }
-  .footer__paragraph1, 
+  .footer__paragraph1,
   .footer__paragraph2,
   .faqs__accordion-header label {
     font-size: 20px;
@@ -2078,11 +2095,12 @@ footer {
     margin-left: -10px;
   }
   .footer__socials img {
-    transform: scale(.5);
+    transform: scale(0.5);
   }
 }
 @media screen and (max-width: 991.5px) {
-  .promo, .programm {
+  .promo,
+  .programm {
     padding-right: 80px;
   }
   .promo__titles {
@@ -2091,14 +2109,16 @@ footer {
   .promo__titles .title1 {
     margin-bottom: 24px;
   }
-  .promo__titles .title1, .promo__titles .title2 {
+  .promo__titles .title1,
+  .promo__titles .title2 {
     font-size: 40px;
   }
   .promo__titles .title2 span::after {
     bottom: -20px;
     height: 20px;
   }
-  .promo__date h3, .promo__date p {
+  .promo__date h3,
+  .promo__date p {
     font-size: 32px;
   }
   .promo__date h3 {
@@ -2120,18 +2140,18 @@ footer {
   .promo__pills .pill1 {
     padding: 11px 40px 9px 40px;
   }
-  .promo__pills .pill2  {
+  .promo__pills .pill2 {
     padding: 13px 40px 13px 40px;
-  } 
+  }
   .promo__pills .pill3 {
     padding: 15px 40px 13px 40px;
   }
   .promo__img-wrap {
-    transform: scale(.7);
+    transform: scale(0.7);
     margin-left: 0;
   }
   .main-title,
-  .accordion-button::after { 
+  .accordion-button::after {
     font-size: 40px !important;
   }
   .invitation__title {
@@ -2140,7 +2160,8 @@ footer {
   .invitation__cards-row {
     row-gap: 40px;
   }
-  .invitation .invitation__card1, .invitation .invitation__card2 {
+  .invitation .invitation__card1,
+  .invitation .invitation__card2 {
     padding: 35px 30px;
   }
   .invitation__cards-subrow {
@@ -2164,7 +2185,7 @@ footer {
   }
   body .invitation .invitation__info-row .info-row__column1:before {
     display: none;
-  } 
+  }
 
   .inspiration__inspiration-text-row {
     margin-bottom: 65px;
@@ -2193,13 +2214,13 @@ footer {
   }
   .cards-row__card1 .card__card-body {
     padding: 12px 10px 10px 10px;
-  } 
+  }
   .cards-row__card2 .card__card-body {
     padding: 12px 17.5px 10px 10px;
-  } 
+  }
   .cards-row__card3 .card__card-body {
     padding: 12px 12.2px 10px 10px;
-  } 
+  }
   .card__card-text {
     font-size: 16px;
   }
@@ -2228,7 +2249,7 @@ footer {
   }
   .testimonial__testimonial-body p {
     font-size: 18px;
-  } 
+  }
 
   .information__subrow:nth-of-type(1) {
     row-gap: 15px;
@@ -2253,7 +2274,7 @@ footer {
   }
   .information__date h1 {
     row-gap: 12px;
-  } 
+  }
   .information__date h1 span {
     width: 75px;
     height: 5px;
@@ -2272,7 +2293,7 @@ footer {
     margin-top: -15px;
   }
   .header__img-wrap {
-    transform: scale(.65);
+    transform: scale(0.65);
   }
   .programm__path {
     row-gap: 20px;
@@ -2307,7 +2328,7 @@ footer {
     padding: 60px 60px 100px 70px;
   }
   .community-header__img {
-    transform: scale(.6);
+    transform: scale(0.6);
   }
   .community-header__title {
     margin: -20px 0 16px 0;
@@ -2356,8 +2377,8 @@ footer {
     font-size: 16px;
   }
   .faqs__accordion-body9 label ul {
-    margin-bottom: .5rem;
-    margin-top: .5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
   }
 
   .regist {
@@ -2410,14 +2431,17 @@ footer {
     margin-left: -10px;
   }
   .footer__socials img {
-    transform: scale(.5);
+    transform: scale(0.5);
   }
 }
 @media screen and (max-width: 767.5px) {
   .header {
     padding: 5px 16px 5px 80px;
   }
-  .promo, .invitation, .programm, .information {
+  .promo,
+  .invitation,
+  .programm,
+  .information {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -2427,7 +2451,8 @@ footer {
   .promo__titles .title1 {
     margin-bottom: 24px;
   }
-  .promo__titles .title1, .promo__titles .title2 {
+  .promo__titles .title1,
+  .promo__titles .title2 {
     font-size: 35px;
   }
   .promo__titles .title2 span::after {
@@ -2438,7 +2463,7 @@ footer {
     padding: 15px 41px 11px 38px;
   }
   .promo__img-wrap {
-    transform: scale(.6);
+    transform: scale(0.6);
     margin-top: -90px;
   }
   .promo__mobile-adapt {
@@ -2464,7 +2489,7 @@ footer {
     margin-bottom: 50px;
   }
   .invitation__cards-subrow,
-  .invitation__cards-row  {
+  .invitation__cards-row {
     row-gap: 30px;
   }
   .invitation__card3 {
@@ -2539,7 +2564,7 @@ footer {
   }
   .testimonial__testimonial-body1 p {
     line-height: 104%;
-}
+  }
   .testimonial__testimonial-body {
     margin-top: 7px;
   }
@@ -2580,7 +2605,7 @@ footer {
   .information__date h1,
   .information__place {
     row-gap: 12px;
-  } 
+  }
   .information__date h1 span {
     height: 4px;
   }
@@ -2595,7 +2620,7 @@ footer {
     margin-top: -35px;
   }
   .header__img-wrap {
-    transform: scale(.5);
+    transform: scale(0.5);
   }
   .programm__path {
     row-gap: 15px;
@@ -2630,7 +2655,7 @@ footer {
     padding: 0px 60px 50px 70px;
   }
   .community-header__img {
-    transform: scale(.5);
+    transform: scale(0.5);
   }
   .community-header__title {
     margin: -40px 0 16px 0;
@@ -2687,8 +2712,8 @@ footer {
     font-size: 14px;
   }
   .faqs__accordion-body9 label ul {
-    margin-bottom: .4rem;
-    margin-top: .4;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4;
   }
   .faqs__accordion-button {
     padding: 10px 1rem !important;
@@ -2746,9 +2771,9 @@ footer {
   .promo__pills .pill1 {
     padding: 10px 25px 7px 25px;
   }
-  .promo__pills .pill2  {
+  .promo__pills .pill2 {
     padding: 12px 25px 11px 25px;
-  } 
+  }
   .promo__pills .pill3 {
     padding: 8px 30px 7px 30px;
   }
@@ -2773,7 +2798,7 @@ footer {
     margin-top: -90px;
   }
   .promo__img-wrap img {
-    transform: scale(.88);
+    transform: scale(0.88);
     margin-left: -35px;
   }
   .promo__img-wrap::before {
@@ -2828,7 +2853,7 @@ footer {
     font-size: 8px;
   }
   .slick-dots li.slick-active button:before {
-    opacity: .9;
+    opacity: 0.9;
   }
   .slider-wrap__testimonial {
     height: auto;
@@ -2872,7 +2897,7 @@ footer {
     margin-top: -45px;
   }
   .header__img-wrap {
-    transform: scale(.4);
+    transform: scale(0.4);
   }
   .path__row {
     padding: 15px 25px;
@@ -2898,7 +2923,7 @@ footer {
     margin-top: -30px;
   }
   .community-header__img {
-    transform: scale(.35);
+    transform: scale(0.35);
   }
   .community-header__title {
     margin: -65px 0 16px 0;
@@ -2971,28 +2996,36 @@ footer {
   .header {
     padding-left: 40px;
   }
-  .header__menu, .header__btns-wrap {
+  .header__menu,
+  .header__btns-wrap {
     flex-direction: column;
     row-gap: 10px;
   }
-  .header__btns-wrap .btns-wrap__regist-btn, .header__btns-wrap .btns-wrap__question-btn {
+  .header__btns-wrap .btns-wrap__regist-btn,
+  .header__btns-wrap .btns-wrap__question-btn {
     width: 156px;
     text-align: center;
     padding: 10px initial;
   }
-  .header__menu li a, .header__btns-wrap .btns-wrap__btn {
+  .header__menu li a,
+  .header__btns-wrap .btns-wrap__btn {
     font-size: 16px;
   }
-  .promo, .invitation, .information, footer {
+  .promo,
+  .invitation,
+  .information,
+  footer {
     padding: 50px 30px;
   }
-  .information, footer {
+  .information,
+  footer {
     padding: 50px 40px;
   }
   .promo__titles .title1 {
     margin-bottom: 20px;
   }
-  .promo__titles .title1, .promo__titles .title2 {
+  .promo__titles .title1,
+  .promo__titles .title2 {
     font-size: 25px;
   }
   .promo__titles .title2 span::after {
@@ -3011,9 +3044,9 @@ footer {
   .promo__pills .pill1 {
     padding: 11px 33px 9px 33px;
   }
-  .promo__pills .pill2  {
+  .promo__pills .pill2 {
     padding: 13px 33px 13px 33px;
-  } 
+  }
   .promo__pills .pill3 {
     padding: 12px 31px 13px 31px;
   }
@@ -3139,7 +3172,7 @@ footer {
     margin-top: -55px;
   }
   .header__img-wrap {
-    transform: scale(.34);
+    transform: scale(0.34);
   }
   .programm__path {
     row-gap: 10px;
@@ -3230,9 +3263,9 @@ footer {
   .promo__pills .pill1 {
     padding: 12px 33px 9px 33px;
   }
-  .promo__pills .pill2  {
+  .promo__pills .pill2 {
     padding: 14px 33px 13px 33px;
-  } 
+  }
   .promo__pills .pill3 {
     padding: 14px 31px 13px 31px;
   }
@@ -3355,7 +3388,7 @@ footer {
   }
 
   .faqs__accordion-button {
-    padding: 10px .7rem !important;
+    padding: 10px 0.7rem !important;
   }
   .faqs__accordion-body {
     padding: 15px 20px 14px 14px;
