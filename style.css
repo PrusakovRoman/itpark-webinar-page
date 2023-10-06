@@ -398,6 +398,12 @@ section {
   margin-top: 17px;
   max-width: 560px;
 }
+.sss {
+  border: 1px solid red;
+}
+.sss video {
+  width: 100% !important;
+}
 
 .inspiration {
   background-color: #493990;
