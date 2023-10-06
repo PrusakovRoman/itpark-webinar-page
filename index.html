@@ -885,22 +885,19 @@
 
   <script>
 
-    const video = `<video id="info_row__video" preload="none" poster="" controls src="video/1.mp4"
+    const videoTag = `<video id="info_row__video" preload="none" poster="" controls src="video/1.mp4"
       style="cursor:pointer" autoplay>
     </video>`;
 
     document.querySelector('.video-wrap__img').addEventListener('click', function() {
-      document.querySelector('.invitation__video-wrap').insertAdjacentHTML('beforeend', video);
+      document.querySelector('.invitation__video-wrap').insertAdjacentHTML('beforeend', videoTag);
     });
   </script>
-</body>
 
-</html>
+  <script>
+    let isStopped = true;
 
-    <!-- let isStopped = true; -->
-
-    <!-- const video = document.getElementById('info_row__video');
-
+    const video = document.getElementById('info_row__video');
 
     // Добавляем обработчик щелчка на видео
     video.addEventListener('click', function () {
@@ -910,4 +907,8 @@
         video.stop();
       }
       isStopped = !isStopped;
-    }); -->
+    });
+  </script>
+</body>
+
+</html>
