@@ -241,11 +241,12 @@
           <p class="info-row__paragraph mb-0">Давайте посмотрим, ЧТО вас ждет на наших вебинарах</p>
         </div>
         <div class="col-md-6 col-12 px-0">
-          <div class="ratio ratio-16x9" data-aos="fade-left" data-aos-duration="900">
+          <div class="ratio ratio-16x9 invitation__video-wrap" data-aos="fade-left" data-aos-duration="900">
             <!-- <video id="info_row__video" preload="none" poster="img/circle-text.png" controls src="video/1.mp4"
               style="cursor:pointer">
             </video> -->
-            <iframe width="887" height="499" src="https://www.youtube.com/embed/UIuLF5egZ04" title="Математик МГУ переходит в Школково? Как мы потеряли команду и платформу за один день" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!-- <iframe width="887" height="499" src="https://www.youtube.com/embed/UIuLF5egZ04" title="Математик МГУ переходит в Школково? Как мы потеряли команду и платформу за один день" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <img src="img/1 (2).png" class="video-wrap__img" alt="" style="cursor:pointer">
           </div>
         </div>
       </div>
@@ -563,9 +564,6 @@
             </div>
           </div>
         </div>
-
-
-
 
       </div>
     </div>
@@ -887,9 +885,22 @@
 
   <script>
 
-    const video = document.getElementById('info_row__video');
+    const video = `<video id="info_row__video" preload="none" poster="" controls src="video/1.mp4"
+      style="cursor:pointer" autoplay>
+    </video>`;
 
-    let isStopped = true;
+    document.querySelector('.video-wrap__img').addEventListener('click', function() {
+      document.querySelector('.invitation__video-wrap').insertAdjacentHTML('beforeend', video);
+    });
+  </script>
+</body>
+
+</html>
+
+    <!-- let isStopped = true; -->
+
+    <!-- const video = document.getElementById('info_row__video');
+
 
     // Добавляем обработчик щелчка на видео
     video.addEventListener('click', function () {
@@ -899,8 +910,4 @@
         video.stop();
       }
       isStopped = !isStopped;
-    });
-  </script>
-</body>
-
-</html>
+    }); -->
