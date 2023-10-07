@@ -884,7 +884,6 @@
   </script>
 
   <script>
-
     const videoTag = `<video id="info_row__video" preload="none" poster="" controls src="video/1.mp4"
       style="cursor:pointer" autoplay>
     </video>`;
@@ -895,19 +894,21 @@
   </script>
 
   <script>
-    let isStopped = true;
 
-    const video = document.getElementById('info_row__video');
+    <!-- let isStopped = true;
 
-    // Добавляем обработчик щелчка на видео
-    video.addEventListener('click', function () {
-      if (isStopped) {
-        video.play();
-      } else {
-        video.stop();
-      }
-      isStopped = !isStopped;
-    });
+    document.querySelector('.invitation__video-wrap').addEventListener('click', function () {
+
+        if (isStopped) {
+          document.querySelector('#info_row__video').play();
+        } else {
+          document.querySelector('#info_row__video').stop();
+        }
+
+        isStopped = !isStopped;
+    }); -->
+
+    
   </script>
 </body>
 
